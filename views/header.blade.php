@@ -7,7 +7,7 @@
                 <img src="./assets/header/menu.png" id="menuClosed">
                 <img src="./assets/header/menu2.png" id="menuOpened" class="hidden">
             </button>
-            <a href="index.html" class="header__logo"></a>
+            <a href="index.php" class="header__logo"></a>
         </div>
         
         <ul class="header__container__navbar hidden">
@@ -24,9 +24,9 @@
         
     </div>
     <ul class="header__mobile-menu hidden">
-        <a href="about.html"><li>About Us</li></a>
-        <a href="rooms.html"><li>Rooms</li></a>
-        <a href="offers.html"><li>Offers</li></a>
-        <a href="contact.html"><li>Contact</li></a>
+        <a href="about.php"><li>About Us</li></a>
+        <a href="rooms.php"><li>Rooms</li></a>
+        <a href="offers.php"><li>Offers</li></a>
+        <a href="contact.php"><li>Contact</li></a>
     </ul>
 </header>
