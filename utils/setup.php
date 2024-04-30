@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__ .'/../BladeOne.php'); 
+require_once(__DIR__ . '/../BladeOne.php');
 $dbconfig = parse_ini_file(".env");
 
 use eftec\bladeone\BladeOne;
