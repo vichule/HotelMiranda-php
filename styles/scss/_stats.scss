@@ -1,0 +1,52 @@
+.stats{
+    background-color: #222222;
+    padding: 2em 2em 5em 2em;
+    margin-bottom: 5em;
+    display: grid;
+    justify-content: center;
+    
+    &__item{
+        text-align: center;
+        &__img{
+            max-width: 5em;
+            margin-top: 5em;
+            margin-bottom: 2em;
+            //left: 40%;
+            position: relative;
+
+        }
+        &__num{
+            font-family: Roboto;
+            font-size: 4em;
+            font-weight: 700;
+            line-height: 1em;
+            text-align: center;
+            color: white;
+
+        }
+        &__par{
+            font-family: Roboto;
+            font-size: 1em;
+            font-weight: 700;
+            line-height: 1em;
+            text-align: center;
+            color: #999999;
+        }
+    }
+}
+
+@media (width > 1000px) {
+
+    .stats{
+        
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        margin-left: 25%;
+
+        
+    }
+}
+
+
+

@@ -1,0 +1,58 @@
+.roomsGrid__slider{
+    width: 100% !important;
+    height: 190em;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+.roomsGrid__slider .swiper-slide{
+    height: 40em !important; 
+    padding: 1em 3em 1em 3em;
+    text-align: center;
+    margin-top: 5em !important;
+}
+.roomsGrid__slider img{
+    width: 30em;
+    height: 25em;
+    vertical-align: bottom;
+    
+}
+
+.roomsGrid__slider__backArrow{
+    position: relative;
+    bottom: 2.4em;
+    padding-left: 12em;
+    display: none;
+}
+
+.roomsGrid__slider__forwardArrow{
+    position: relative;
+    bottom: 3.8em;
+    text-align: end;
+    padding-right: 12em;
+    display: none;
+}
+
+#roomsComplement{
+    width: 25em;
+    height: 5em;
+    z-index: 10;
+    position: relative;
+    bottom: 2em;
+}
+
+
+@media (width > 1000px) {
+
+    .roomsGrid__slider{
+        width: 65% !important;
+        height: 170em;
+
+        img{
+            width: 35em;
+        }
+
+        .swiper-slide{
+            height: 45em !important;
+        }
+    }
+}

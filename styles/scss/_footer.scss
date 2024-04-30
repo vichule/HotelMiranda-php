@@ -1,0 +1,195 @@
+.footerContainer{
+    background-image: url("./assets/footer/footerBack.jpg");
+    
+    &__main{
+        &__intro{
+            padding: 1em 2em 1em 2em;
+    
+            &__container{
+                display: flex;
+                justify-content: space-between;
+                width: 30em;
+                margin: 0em 0em 4em 0em;
+    
+                &__logo{
+                    background-color: #BEAD8E;
+                    min-width: 2.5em;
+                    height: 2.5em;
+                    padding: 0.7em 0em 0em 0.9em;
+                    color: white;
+                    font-family: Archivo;
+                    font-size: 2em;
+                    font-weight: 700;
+                    margin-right: 1em;
+                }
+                &__title1{
+                    font-family: Archivo;
+                    font-size: 1em;
+                    margin: 0em 4em 0em 0em;
+                    letter-spacing: 0.1em;
+                }
+                &__title2{
+                    font-family: Archivo;
+                    font-size: 2em;
+                    letter-spacing: 0.1em;
+                }
+            }
+            
+            &__par{
+                font-family: Archivo;
+                font-size: 1.5em;
+                font-weight: 400;
+                line-height: 1.5em;
+                text-align: left;
+                color: #777777;
+                margin-bottom: 2em;
+                
+            }
+            &__socials{
+    
+                &__img{
+                    width: 3em;
+                    background-color: #f1f1f1;
+                    padding: 0.6em;
+                    margin-right: 0.5em;
+                }
+                &__img:hover{
+                    background-color: #e4ca9a;
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+        &__services{
+            padding: 1em 2em 1em 2em;
+    
+            &__title{
+                font-family: Old Standard TT;
+                font-size: 2em;
+                font-weight: 400;
+                text-align: left;
+                margin: 1em 0em 1em 0em;
+            }
+            &__listContainer{
+    
+                display: flex;
+                justify-content: space-between;
+                width: 25em;
+                margin-left: 1.5em;
+    
+                &__list{
+                    color: #777777;
+                    font-family: Roboto;
+                }
+                &__list li::marker {
+                    content: '+ ';
+                    font-size: 1em;
+                  }
+                &__list li {
+                    font-size: 1.2em;
+                    font-weight: 400;
+                    line-height: 3em;
+                }
+            }
+            
+        }
+        &__contact{
+            padding: 1em 2em 1em 2em;
+    
+            &__title{
+                font-family: Old Standard TT;
+                font-size: 2em;
+                font-weight: 400;
+                text-align: left;
+                margin: 1em 0em 1em 0em;
+            }
+            &__item{
+                display: flex;
+                margin-bottom: 4em;
+    
+    
+                
+                &__description{
+                    margin-left: 2em;
+    
+                    &__title{
+                        font-family: Old Standard TT;
+                        font-size: 1.5em;
+                        font-weight: 400;
+                        text-align: left;
+                        margin-bottom: 0.3em;
+                    }
+                    &__par{
+                        font-family: Roboto;
+                        font-size: 1em;
+                        font-weight: 400;
+                        text-align: left;
+                        letter-spacing: 0.05em;
+                        color: #777777;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+    &__termsContainer{
+        background-color: #F8F8F8;
+        padding: 1em 2em 1em 2em;
+        
+        &__rights{
+            font-family: Roboto;
+            font-size: 1.3em;
+            font-weight: 700;
+            line-height: 2em;
+            letter-spacing: -0.04em;
+            text-align: left;
+            
+        }
+        &__terms{
+            font-family: Roboto;
+            font-size: 1.3em;
+            font-weight: 700;
+            line-height: 2em;
+            letter-spacing: -0.04em;
+            text-align: left;
+        }
+    }
+}
+
+@media (width > 1000px) {
+
+    .footerContainer{
+        
+        &__main{
+            display: flex;
+            justify-content: center;
+
+            &__intro{
+                max-width: 29em;  
+
+            }
+            &__services{
+        
+                &__title{
+                    margin-left: 3.5em;
+                }
+                &__listContainer{
+                    width: 35em;
+                    margin: 0em 1em 0em 8em;
+
+                    &__list li {
+                        margin-right: 5em;
+                    }
+                }
+            }
+        }
+        
+        &__termsContainer{
+            display: flex;
+            justify-content: space-around;
+            padding: 1em 12em 1em 12em;
+        }
+    }
+}
+  
+

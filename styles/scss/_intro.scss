@@ -1,0 +1,99 @@
+
+.intro{
+    background-color: black;
+    padding: 2.5em;
+    min-height: 70em;
+
+    &__container1{
+
+        &__title{
+            color: #BDAC8D;
+            font-family: Archivo;
+            font-size: 1.1em;
+            font-weight: 700;
+            line-height: 1.8em;
+            letter-spacing: 0.1em;
+        }
+        &__subtitle{
+            font-family: Old Standard TT;
+            font-size: 5em;
+            font-weight: 400;
+            line-height: 1em;
+            letter-spacing: -0.05em;
+            text-align: left;
+            color: white;
+            margin: 0.5em 1em 0.5em 0em;
+        }
+        &__par{
+            font-family: Archivo;
+            font-size: 1.2em;
+            font-weight: 400;
+            text-align: left;
+            line-height: 1.5em;
+            color: #C2C2C2;
+        }
+        
+        &__btn{
+            background: #BEAD8E;
+            color: white;
+            font-family: Archivo;
+            font-size: 1em;
+            font-weight: 700;
+            line-height: 1.5em;
+            letter-spacing: 0.1em;
+            width: 20em;
+            height: 5em;
+            border: none;
+            margin: 25em 0em 5em 0em;
+            position: absolute;
+        }
+    }
+    &__container2{
+
+        &__video{
+            border: none;
+            width: 32em;
+            margin: 3em 0em 1em 0em;
+            min-height: 20em;
+    
+        }
+    }
+
+    
+}
+
+@media (width > 1000px) {
+    .intro{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-height: auto;
+        background: linear-gradient(to right, black 0%, black 65%, #AD9D82 65%, #AD9D82 100%);
+
+        &__container1{
+            padding: 5em 2em 0em 2em;
+            max-width: 45em;
+            
+            &__par{
+                max-width: 34em;
+            }
+            
+            &__btn{
+                position: relative;
+                margin-top: 3em;
+            }
+        }
+        &__container2{
+            padding: 5em 2em 0em 2em;
+
+            &__video{
+                width: 40em;
+                height: 30em;
+        
+            }
+        }
+    
+        
+    }
+
+}

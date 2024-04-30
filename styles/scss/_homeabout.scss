@@ -1,0 +1,189 @@
+
+.homeAbout{
+    background: linear-gradient( to top, white 0%, white 65%, #f6f6f6 65%, #f6f6f6 100% );
+    margin-top: 5em;
+    padding: 5em 3em 5em 3em;
+
+    &__firstContainer{
+        &__title{
+            color: #777777;
+            font-family: Archivo;
+            font-size: 1.1em;
+            font-weight: 700;
+            line-height: 1.8em;
+            letter-spacing: 0.1em;
+        }
+        &__subtitle{
+            font-family: Old Standard TT;
+            font-size: 5.5em;
+            font-weight: 400;
+            line-height: 1em;
+            margin-top: 0.8em;
+            margin-bottom: 0.5em;
+            max-width: 10em;
+        }
+        &__par{
+            color: #777777;
+            font-family: Archivo;
+            font-size: 1.2em;
+            font-weight: 400;
+            line-height: 1.7em;
+            text-align: left;
+            max-width: 29em;
+        }
+        &__btn{
+            background: #BEAD8E;
+            color: white;
+            font-family: Archivo;
+            font-size: 1em;
+            font-weight: 700;
+            line-height: 1.5em;
+            letter-spacing: 0.1em;
+            width: 20em;
+            height: 5em;
+            border: none;
+            margin: 2em 0em 5em 0em;
+        }
+    }
+    &__secondContainer{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+
+        &__card1{
+            &__pic{
+                width: 23.5em;
+                height: 25em;
+                margin-left: 4em;
+        
+            }
+            &__teamContainer{
+                margin: -1em 4em 5em 4em;
+                min-height: 25em;
+                padding: 4em 2em 4em 2em;
+                background-image: url('./assets/home/backTeam.png');
+                background-repeat: no-repeat;
+                background-position-x: 10em;
+                background-position-y: 4.5em;
+                background-color: white;
+                background-size: 10em;
+                max-width: 25em;
+        
+                &__img{
+                    margin-left: 6em;
+                    width: 5em;
+                }
+                &__title{
+                    font-family: Old Standard TT;
+                    font-size: 3em;
+                    font-weight: 400;
+                    letter-spacing: -0.05em;
+                    text-align: center;
+                    margin: 0.5em 0em 0.5em 0em;
+                }
+                &__par{
+                    font-family: Roboto;
+                    font-size: 1.1em;
+                    font-weight: 400;
+                    line-height: 1.5em;
+                    text-align: center;
+                }
+            }
+        }
+        &__card2{
+            &__pic{
+                width: 23.5em;
+                height: 25em;
+                margin-left: 4em;
+        
+            }
+            &__roomContainer{
+                color: white;
+                background-color: black;
+                margin: -1em 4em 0em 4em;
+                min-height: 25em;
+                padding: 4em 2em 4em 2em;
+                max-width: 23.5em;
+        
+                &__img{
+                    margin-left: 7em;
+                    width: 5em;
+                }
+                &__title{
+                    font-family: Old Standard TT;
+                    font-size: 3em;
+                    font-weight: 400;
+                    letter-spacing: -0.05em;
+                    text-align: center;
+                    margin: 0.5em 0em 0.5em 0em;
+                }
+                &__par{
+                    font-family: Roboto;
+                    font-size: 1.1em;
+                    font-weight: 400;
+                    line-height: 1.5em;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+    
+    
+}
+
+@media (width > 1000px) {
+
+    .homeAbout{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+
+        &__firstContainer{
+            margin: 10em 0em 0em 5em;
+            max-width: 40em;
+        }
+        &__secondContainer{
+            display: flex;
+    
+            &__card1{
+                display: flex;
+                flex-flow: column-reverse;
+                
+                
+                &__pic{
+                    width: 25em;
+                    margin-left: 0em;
+            
+                }
+                &__teamContainer{
+                    margin: 0em 0em 2em 0em;
+    
+                    &__par{
+                        max-width: 17em;
+                    }
+                }
+            }
+            &__card2{
+                padding-top: 5em;
+
+                &__pic{
+                    width: 25em;
+                    margin-bottom: 3em;
+            
+                }
+                &__roomContainer{
+                    max-width: 25em;
+                    min-width: 25em;
+                  
+                    &__par{
+                        max-width: 17em;
+                    }
+                }
+            }
+        }
+        
+        
+        
+    }
+}

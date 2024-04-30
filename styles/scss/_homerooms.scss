@@ -1,0 +1,123 @@
+.homerooms{
+    text-align: center;
+
+    &__title{
+        text-align: center;
+        color: #777777;
+        font-family: Archivo;
+        font-size: 1.1em;
+        font-weight: 700;
+        line-height: 1.8em;
+        letter-spacing: 0.1em;
+    }
+    &__subtitle{
+        font-family: Old Standard TT;
+        font-size: 5.5em;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 0.4em;
+        margin-bottom: 0.2em;
+    }
+    &__complements{
+        width: 25em;
+        height: 5em;
+        z-index: 10;
+        position: relative;
+        top: 3em;
+    }
+    &__slider{
+
+        
+        &__descriptions{
+
+            &__item{
+                width: 34.5em;
+                position: relative;
+                bottom: 5em;
+                z-index: 10;
+                background-color: white;
+                padding: 1em 4em 1em 4em;
+                display: inline-block;
+
+                &__title{
+                    font-family: Old Standard TT;
+                    font-size: 2.8em;
+                    font-weight: 400;
+                    letter-spacing: -0.05em;
+                    text-align: center;
+                }
+                &__par{
+                    color: #777777;
+                    font-family: Archivo;
+                    font-size: 1em;
+                    font-weight: 400;
+                    line-height: 1.7em;
+                    text-align: center;
+                    padding: 1em 4em 1em 4em;
+
+                }
+                &__price{
+                    font-size: 2em;
+                    font-family: Archivo;
+                    font-weight: 700;
+                    text-align: center;
+                    color: #BEAD8E;
+                    display: block;
+                }
+            }
+        }
+    }
+    &-backArrow{
+        bottom: 12em;
+        width: 3em;
+        height: 3em;
+        z-index: 20;
+        right: 15em;
+    }
+    &-forwardArrow{
+        bottom: 12em;
+        width: 3em;
+        height: 3em;
+        z-index: 20;
+        left: 14em;
+    }
+}
+
+#roomsImg{
+    width: 100%;
+    height: 25em;
+    margin-top: -3em;
+}
+
+@media (width > 1000px) {
+
+    #roomsImg{
+        width: 100%;
+        height: 35em;
+    }
+
+    .homerooms{
+        &-backArrow{
+            right: 10em;
+        }
+        &-forwardArrow{
+            left: 60em;
+        }   
+        &__slider{
+
+            &__descriptions{
+                display: inline-block;
+
+                &__item{
+                    width: 50em;
+                    bottom: 3em;
+                    display: flex;
+                    align-items: center;
+                    right: 3.3em;
+                }
+            }
+        } 
+    }
+    
+}
+

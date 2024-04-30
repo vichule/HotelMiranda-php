@@ -1,0 +1,19 @@
+html, * { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+body { 
+    min-width: 320px 
+}
+
+.hidden{
+    display: none
+}
+
+
+
+@import 'header','banner','datecheck','homeabout','homerooms','intro','facilities','menu','stats','footer',
+        'bannergeneric','aboutintro','restaurant','counter','sliders','offermain','popularlist','roomsgrid',
+        'contact','details','amenities','relatedrooms';

@@ -1,0 +1,116 @@
+
+.dateCheck{
+    background-color: #222222;
+    color: white;
+    padding: 3em 1.5em 3em 1.5em;
+
+    &__container{
+
+
+        &__label{
+            font-family: Roboto;
+            font-size: 1.5em;
+            font-weight: 700;
+            line-height: 1.9em;
+            text-align: left;
+            display: block;
+        }
+        &__input1{
+            margin-bottom: 1em;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #BEAD8E;
+            color: #686868;
+            width: 34.5em;
+            font-family: Roboto;
+            font-weight: 400;
+            line-height: 1.6em;
+            padding-left: 2em;
+    
+        }
+        &__input1::-webkit-calendar-picker-indicator{
+            position: absolute;
+            left: 0;
+            cursor: pointer;
+            background-image: url('/assets/home/calendar.png');
+            margin-left: 1.5em;
+            
+        }
+        &__input2{
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #BEAD8E;
+            color: #686868;
+            width: 34.5em;
+            font-family: Roboto;
+            font-weight: 400;
+            line-height: 1.6em;
+            padding-left: 2em;
+    
+        }
+        &__input2::-webkit-calendar-picker-indicator{
+            position: absolute;
+            left: 0;
+            cursor: pointer;
+            background-image: url('/assets/home/calendar.png');
+            margin-left: 1.5em;
+            
+        }
+        &__checkBtn{
+            background: #BEAD8E;
+            color: white;
+            font-family: Archivo;
+            font-size: 1em;
+            font-weight: 700;
+            line-height: 1.5em;
+            letter-spacing: 0.1em;
+            width: 25em;
+            height: 6em;
+            display: block;
+            margin-top: 5em;
+        }
+    }
+    
+    
+}
+
+@media (width > 1000px) {
+    
+
+        .dateCheck{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 3em 15em 3em 20em;
+        
+            &__container{
+
+                display: flex;
+
+                &__input1{
+                    margin-right: 5em;
+            
+                }
+                &__input1::-webkit-calendar-picker-indicator{
+                    position: relative;
+                    //right: 33em;
+                    left: -33em;
+                  
+                }
+                &__input2::-webkit-calendar-picker-indicator{
+                    position: relative;
+                    //right: 33em;
+                    left: -33em;
+                    
+                }
+                &__checkBtn{
+                    min-width: 25em;
+                    margin-top: 0em;
+                    margin-left: 10em;
+                }
+            }
+            
+            
+        }
+}

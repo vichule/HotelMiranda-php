@@ -1,0 +1,191 @@
+
+.menu{
+    padding-top: 10em;
+    //background-image: url(/assets/home/menuIcon.png);
+    background-repeat: no-repeat;
+    background-position-x: 110%;
+    background-position-y: top;
+    background-size: 35%;
+    justify-content: center;
+    display: grid;
+
+    &__title{
+        color: #777777;
+        font-family: Archivo;
+        font-size: 1.1em;
+        font-weight: 700;
+        line-height: 1.8em;
+        letter-spacing: 0.1em;
+        margin-left: 1em;
+    }
+    &__subtitle{
+        font-family: Old Standard TT;
+        font-size: 5.5em;
+        font-weight: 400;
+        line-height: 1.1em;
+        text-align: left;
+        margin-left: 0.3em;
+        margin-bottom: 0.5em;
+    }
+    
+    &__sliderMenu{
+        width: 35em ;
+        height: 40em;
+        &-slide{
+
+            &-item{
+                display: flex;
+                margin: 1em 0em 2em 2em;
+                background: opacity($color: #00000000);
+                img{
+                    width: 10em;
+                    height: 10em;
+                    vertical-align: bottom;
+
+                }
+                &__text{
+                    margin-left: 3em;
+                    padding-top: 1em;
+
+                    h4{
+                        font-family: Old Standard TT;
+                        font-size: 2em;
+                        font-weight: 400;
+                        line-height: 1em;
+                        letter-spacing: -0.07em;
+                        text-align: left;
+                        margin-bottom: 0.5em;
+    
+                    }
+                    p{
+                        font-family: Roboto;
+                        font-size: 1em;
+                        font-weight: 400;
+                        line-height: 2em;
+                        text-align: left;
+                        width: 13em;
+    
+                    }
+                }
+                
+            }
+            &-item:hover{
+                background-color: black;
+                color: white;
+                background-image: url(/assets/home/arrowHover.png);
+                background-repeat: no-repeat;
+                background-position-y: center;
+                background-position-x: 95%; 
+            }
+        }
+        
+        &__backArrow{
+            bottom: 0em;
+            left: 25em;
+        }
+        &__forwardArrow{
+            bottom: 0em;
+            left: 26em;
+
+        }
+    }
+    &__sliderPics{
+        margin: 8em 1em 8em 1em;
+
+        &__container{
+            max-width: 30em;
+            margin-bottom: 5em;
+            &__item{
+
+                &__img{
+                    width: 35em;
+                    height: 35em;
+                }
+            }
+        }
+    }
+}
+
+#backArrow{
+    cursor: pointer;
+    position: relative;
+    background-color: #ebebeb;
+    padding: 1em;
+    display: inline-block;
+}
+
+#forwardArrow{
+    cursor: pointer;
+    position: relative;
+    background-color: #BDAC8D;
+    padding: 1em;
+    color: white;
+    display: inline-block;
+}
+
+
+@media (width > 1000px) {
+
+    .menu{
+        //background-image: url(/assets/home/menuIcon2.png);
+        background-position-x: 15em;
+        background-position-y: 0em;
+        padding-top: 20em;
+        background-size: unset;
+
+        &__sliderMenu{
+            width: 100em;
+            &-slide{
+                
+                &-item{
+    
+                    img{
+                        width: 10em;
+                        height: 10em;
+                    } 
+                    &__text{
+                        p{
+                            font-size: 1.3em;
+                            width: 21em;
+                        }
+                        h4{
+                            font-size: 2.5em;
+                        }
+                    }
+                }
+            }
+            &__backArrow{
+                height: 4em;
+                width: 4em;
+                padding: 1.3em 0em 0em 1.5em;
+                left: 80em;
+            }
+            &__forwardArrow{
+                height: 4em;
+                width: 4em;
+                padding: 1.3em 0em 0em 1.5em;
+                left: 82em;
+    
+            }
+        }
+        &__sliderPics{    
+            &__container{
+                display: flex;
+                justify-content: center;
+                max-width: 95em;
+
+                &__item{
+                    display: block;
+                    margin: 0em 1em 0em 1em;
+
+                    &__img{
+                        width: 30em;
+                        height: 30em;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+           

@@ -1,0 +1,104 @@
+
+.facilities{
+    padding-top: 5em;
+    padding-bottom: 5em;
+    margin-bottom: 5em;
+
+    &__title{
+        text-align: center;
+        color: #777777;
+        font-family: Archivo;
+        font-size: 1.1em;
+        font-weight: 700;
+        line-height: 1.8em;
+        letter-spacing: 0.1em;
+
+    }
+    &__subtitle{
+        font-family: Old Standard TT;
+        font-size: 5.5em;
+        font-weight: 400;
+        line-height: 2em;
+        letter-spacing: -0.05em;
+        text-align: center;
+    }
+    &__slider{
+        max-width: 40em;
+        &__container{
+            
+            &__item{
+                margin-top: 3em;
+                padding: 8em 10em 5em 5em;
+                max-width: 40em;
+                background-repeat: no-repeat;
+                background-position-x: 20em;
+                background-position-y: top;
+
+                &__img{
+                    margin-bottom: 2em;
+
+                }
+                &__title{
+                    font-family: Old Standard TT;
+                    font-size: 3em;
+                    font-weight: 400;
+                    line-height: 2em;
+                    letter-spacing: -0.05em;
+                    text-align: left;
+
+                }
+                &__par{
+                    font-family: Archivo;
+                    font-size: 1.2em;
+                    font-weight: 400;
+                    line-height: 2em;
+                    text-align: left;
+                    color: #777777;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+.dark{
+    background-color: #222222;
+    color: white;
+}
+
+.darkLight{
+    background-color: #292929;
+}
+
+
+
+@media (width > 1000px) {
+    .facilities{
+        
+        
+        &__slider{
+            max-width: 120em;
+            text-align: center;
+    
+            &__container{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                
+                &__item{
+                    display: block;
+                    max-width: 37em;
+                    margin-right: 3em;
+                }
+            }
+            &__dotsLine{
+                display: none;
+            }
+        }
+    }
+
+    
+    
+}

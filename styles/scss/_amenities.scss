@@ -1,0 +1,123 @@
+.amenities{
+    margin: 5em 2em 10em 2em;
+
+    h4{
+        font-family: Old Standard TT;
+        font-size: 3em;
+        font-weight: 400;
+        line-height: 2em;
+        text-align: left;
+        border-bottom: 1px solid #7777773b;
+        margin-bottom: 1em;
+    }
+    &-list{
+        display: flex;
+        justify-content: space-between;
+        max-width: 25em;
+        margin-left: 1.5em;
+        
+        ul{
+            list-style-type: none;
+        }
+        li{
+            font-family: Roboto;
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #777777;
+            margin-bottom: 1em;
+        }
+        img{
+            max-width: 1.3em;
+            margin-right: 0.5em;
+        }
+    }
+    &-profile{
+        max-width: 35em;
+        text-align: center;
+        padding: 5em;
+
+        &__checkmark{
+            background-color: #BDAC8D;
+            width: 4em;
+            height: 4em;
+            padding: 1.2em;
+            border-radius: 5em;
+            color: white;
+            border: 3px solid white;
+            position: relative;
+            z-index: 10;
+            left: 15em;
+            top: 5em;
+        }
+
+        h4{
+            border: none;
+            text-align: center;
+            margin-bottom: 0em;
+        }
+        h2{
+            font-family: Archivo;
+            font-size: 1.4em;
+            font-weight: 700;
+            line-height: 1.5em;
+            letter-spacing: 0.2em;
+            color: #BDAC8D;
+            margin-bottom: 1em;
+        }
+        p{
+            font-family: Archivo;
+            font-size: 1.6em;
+            font-weight: 400;
+            line-height: 1.5em;
+            color: #777777;
+        }
+
+        img{
+            width: 15em;
+            border-radius: 10em;
+            height: 15em;
+        }
+    }
+    &-cancellation{
+        margin-top: 5em;
+        p{
+            font-family: Roboto;
+            font-size: 1.4em;
+            font-weight: 400;
+            line-height: 1.5em;
+            text-align: left;
+            color: #777777;
+        }
+    }
+}
+
+@media (width > 1000px) {
+    .amenities{
+        padding: 0em 30em 0em 30em;
+        display: block !important;
+
+        &-profile{
+            margin-top: 5em;
+            padding: 5em 5em 10em 5em;
+            box-shadow: 3px 3px 10px 3px #BEAD8E45;
+
+            &__checkmark{
+                left: 16em;
+            }
+        }
+        &-cancellation{
+            width: 57em;
+        }
+        &-list{
+            max-width: 35em;
+        }
+    }
+}
+
+@media (width > 600px) {
+    .amenities{
+        display: grid;
+        justify-items: center;
+    }
+    
+}
