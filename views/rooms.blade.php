@@ -1,0 +1,1 @@
+<h1>rooms page</h1>
