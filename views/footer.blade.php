@@ -1,4 +1,4 @@
-<footer class="footerContainer">
+<footer class="footerContainer" style="background-image: url(./assets/footer/footerBack.jpg)">
     <div class="footerContainer__main">
         <div class="footerContainer__main__intro">
             <div class="footerContainer__main__intro__container">

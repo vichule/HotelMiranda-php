@@ -12,7 +12,7 @@
 
     <section class="roomsGrid">
         <div class="swiper roomsGrid__slider">
-            <div class="swiper-wrapper ">
+            <div class="swiper-wrapper " id="rooms_wrapper">
                 <div class="swiper-slide popularList__slider__wrapper__slide">
                     <img src="./assets/home/minimal_room.jpg" alt="">
                     <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">

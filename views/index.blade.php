@@ -35,7 +35,7 @@
         <div class="homeAbout__secondContainer">
             <div class="homeAbout__secondContainer__card1">
                 <img src="./assets/home/team.jpg" alt="" class="homeAbout__secondContainer__card1__pic">
-                <div class="homeAbout__secondContainer__card1__teamContainer">
+                <div class="homeAbout__secondContainer__card1__teamContainer" style="background-image: url('./assets/home/backTeam.png')">
                     <img src="./assets/home/teamImg.png" alt=""
                         class="homeAbout__secondContainer__card1__teamContainer__img">
                     <h1 class="homeAbout__secondContainer__card1__teamContainer__title">Strong Team</h1>
@@ -152,7 +152,7 @@
                 <div class="swiper-slide facilities__slider__container__item"
                     style="background-image: url(./assets/home/05.png);">
                     <img class="facilities__slider__container__item__img" src="./assets/home/feature5.png">
-                    <h1 class="facilities__slider__container__item__title">Ppayment Options</h1>
+                    <h1 class="facilities__slider__container__item__title">Payment Options</h1>
                     <p class="facilities__slider__container__item__par">Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
                 </div>

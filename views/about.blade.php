@@ -88,7 +88,7 @@
                 <div class="swiper-slide facilities__slider__container__item darkLight"
                     style="background-image: url(./assets/about/05.png);">
                     <img class="facilities__slider__container__item__img" src="./assets/home/feature5.png">
-                    <h1 class="facilities__slider__container__item__title">Ppayment Options</h1>
+                    <h1 class="facilities__slider__container__item__title">Payment Options</h1>
                     <p class="facilities__slider__container__item__par">Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
                 </div>

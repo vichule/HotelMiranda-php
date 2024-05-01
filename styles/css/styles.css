@@ -1370,6 +1370,14 @@ header {
   opacity: 1;
 }
 
+.swiper-wrapper {
+  height: unset !important;
+}
+
+#rooms_wrapper{
+  height: 100% !important;
+}
+
 .offermain {
   padding-top: 5em;
 }

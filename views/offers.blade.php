@@ -4,20 +4,20 @@
         <p class="bannerGeneric__title">THE ULTIMATE LUXURY EXPERIENCE</p>
         <h1 class="bannerGeneric__subtitle">Our Offers</h1>
         <div class="bannerGeneric__nav">
-            <a href="index.html" id="homeBtn">Home</a>
+            <a href="index.php" id="homeBtn">Home</a>
             <p>|</p>
-            <a href="offers.html" id="currentBtn">Offers</a>
+            <a href="offers.php" id="currentBtn">Offers</a>
         </div>
     </section>
 
     <section class="offermain">
         <div class="offermain__item">
-            <a href="room_details.html"><img src="./assets/offers/luxuryRoom.jpg" alt=""></a>
+            <a href="room_details.php"><img src="./assets/offers/luxuryRoom.jpg" alt=""></a>
             <div class="offermain__item-card">
                 <div class="offermain__item__container1">
                     <div class="offermain__item__container1__titles">
                         <h1>DOUBLE BED</h1>
-                        <a href="room_details.html">Luxury Double Bed</a>
+                        <a href="room_details.php">Luxury Double Bed</a>
                     </div>
                     <div class="offermain__item__container1__prices">
                         <p>$500/Night</p>
@@ -30,7 +30,7 @@
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in
                             voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <a href="room_details.html" class="button">BOOK NOW</a>
+                        <a href="room_details.php" class="button">BOOK NOW</a>
                     </div>
                     <div class="offermain__item__container2__list">
                         <ul>
@@ -53,12 +53,12 @@
             </div>
         </div>
         <div class="offermain__item">
-            <a href="room_details.html"><img src="./assets/offers/luxuryRoom.jpg" alt=""></a>
+            <a href="room_details.php"><img src="./assets/offers/luxuryRoom.jpg" alt=""></a>
             <div class="offermain__item-card">
                 <div class="offermain__item__container1">
                     <div class="offermain__item__container1__titles">
                         <h1>DOUBLE BED</h1>
-                        <a href="room_details.html">Luxury Double Bed</a>
+                        <a href="room_details.php">Luxury Double Bed</a>
                     </div>
                     <div class="offermain__item__container1__prices">
                         <p>$500/Night</p>
@@ -71,7 +71,7 @@
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in
                             voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <a href="room_details.html" class="button">BOOK NOW</a>
+                        <a href="room_details.php" class="button">BOOK NOW</a>
                     </div>
                     <div class="offermain__item__container2__list">
                         <ul>
@@ -94,12 +94,12 @@
             </div>
         </div>
         <div class="offermain__item">
-            <a href="room_details.html"><img src="./assets/offers/luxuryRoom.jpg" alt=""></a>
+            <a href="room_details.php"><img src="./assets/offers/luxuryRoom.jpg" alt=""></a>
             <div class="offermain__item-card">
                 <div class="offermain__item__container1">
                     <div class="offermain__item__container1__titles">
                         <h1>DOUBLE BED</h1>
-                        <a href="room_details.html">Luxury Double Bed</a>
+                        <a href="room_details.php">Luxury Double Bed</a>
                     </div>
                     <div class="offermain__item__container1__prices">
                         <p>$500/Night</p>
@@ -112,7 +112,7 @@
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in
                             voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <a href="room_details.html" class="button">BOOK NOW</a>
+                        <a href="room_details.php" class="button">BOOK NOW</a>
                     </div>
                     <div class="offermain__item__container2__list">
                         <ul>
@@ -135,12 +135,12 @@
             </div>
         </div>
         <div class="offermain__item">
-            <a href="room_details.html"><img src="./assets/offers/luxuryRoom.jpg" alt=""></a>
+            <a href="room_details.php"><img src="./assets/offers/luxuryRoom.jpg" alt=""></a>
             <div class="offermain__item-card">
                 <div class="offermain__item__container1">
                     <div class="offermain__item__container1__titles">
                         <h1>DOUBLE BED</h1>
-                        <a href="room_details.html">Luxury Double Bed</a>
+                        <a href="room_details.php">Luxury Double Bed</a>
                     </div>
                     <div class="offermain__item__container1__prices">
                         <p>$500/Night</p>
@@ -153,7 +153,7 @@
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in
                             voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <a href="room_details.html" class="button">BOOK NOW</a>
+                        <a href="room_details.php" class="button">BOOK NOW</a>
                     </div>
                     <div class="offermain__item__container2__list">
                         <ul>
@@ -190,7 +190,7 @@
                     <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
                         sicing elit, sed do eiusmod tempor.</p>
                     <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                    <a href="room_details.html">Book Now</a>
+                    <a href="room_details.php">Book Now</a>
                 </div>
                 <div class="swiper-slide popularList__slider__wrapper__slide">
                     <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
@@ -200,7 +200,7 @@
                     <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
                         sicing elit, sed do eiusmod tempor.</p>
                     <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                    <a href="room_details.html">Book Now</a>
+                    <a href="room_details.php">Book Now</a>
                 </div>
                 <div class="swiper-slide popularList__slider__wrapper__slide">
                     <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
@@ -210,7 +210,7 @@
                     <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
                         sicing elit, sed do eiusmod tempor.</p>
                     <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                    <a href="room_details.html">Book Now</a>
+                    <a href="room_details.php">Book Now</a>
                 </div>
             </div>
 
