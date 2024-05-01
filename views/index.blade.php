@@ -63,7 +63,13 @@
         <img src="./assets/home/frame_rooms.jpg" alt="" class="homerooms__complements">
         <div class="swiper homerooms__slider">
             <div class="swiper-wrapper homerooms__slider__container">
+                @foreach ($rooms as $room)
                 <div class="swiper-slide homerooms__slider__container_item">
+                    <img id="roomsImg" src="{{ json_decode($room['photo_url'])[0] }}" alt="">
+                    
+                </div>
+                @endforeach
+                {{-- <div class="swiper-slide homerooms__slider__container_item">
                     <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
                 </div>
                 <div class="swiper-slide homerooms__slider__container_item">
@@ -80,7 +86,7 @@
                 </div>
                 <div class="swiper-slide homerooms__slider__container_item">
                     <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
-                </div>
+                </div> --}}
 
             </div>
             <div class="homerooms-backArrow" id="backArrow">&#10094;</div>

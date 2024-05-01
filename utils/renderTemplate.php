@@ -2,7 +2,7 @@
 
 require_once(__DIR__ .'/setup.php');
 
-function renderTemplate($name) {
+function renderTemplate($name, $variables) {
     global $blade;
-    echo $blade->run($name);
+    echo $blade->run($name, $variables);
 }
