@@ -6,15 +6,15 @@ const headerBar = document.querySelector('header')
 
 let dropdown = false;
 
-buttonMenu.addEventListener('click', function(){
-			
-    if(!dropdown){
+buttonMenu.addEventListener('click', function () {
+
+    if (!dropdown) {
 
         hiddenMenu.classList.remove('hidden');
         crossMenu.classList.remove('hidden');
         barsMenu.classList.add('hidden');
         dropdown = true;
-    }else{
+    } else {
         hiddenMenu.classList.add('hidden');
         crossMenu.classList.add('hidden');
         barsMenu.classList.remove('hidden');
@@ -22,17 +22,32 @@ buttonMenu.addEventListener('click', function(){
     }
 });
 
+window.addEventListener('scroll', function () {
 
-document.addEventListener("mousemove", (event) => {
-    let y = event.clientY
-    if(y <= 200){
-        headerBar.classList.remove('header-normal')
-        headerBar.classList.add('header-down')
-    }else if(y >= 200){
-        headerBar.classList.remove('header-down')
-        headerBar.classList.add('header-normal')
-    }
-});
+    let body = document.documentElement;
+
+    let scrollT = body.scrollTop || document.body.scrollTop;
+    let scrollH = body.scrollHeight || document.body.scrollHeight;
+
+
+    document.addEventListener("mousemove", (event) => {
+        let y = event.clientY
+
+
+
+        if (scrollT > 200 && y >= 150) {
+            headerBar.classList.remove('header-down')
+            headerBar.classList.add('header-normal')
+
+        } else if (scrollT < 200) {
+
+            headerBar.classList.remove('header-normal')
+            headerBar.classList.add('header-down')
+        }
+    });
+
+})
+
 
 
 

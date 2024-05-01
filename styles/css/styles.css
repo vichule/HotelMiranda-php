@@ -89,18 +89,21 @@ header {
   display: none;
 }
 
-.header-down {
-  position: fixed;
-  transition: all 800ms ease-out;
-}
 
-.header-normal {
-  position: fixed;
-  transform: translate3d(0, -80%, 0);
-  transition: all 800ms ease-out;
-}
 
 @media (width > 1000px) {
+
+  .header-down {
+    position: fixed;
+    transition: all 800ms ease-out;
+    transform: translate3d(0, -50%, 0);
+  }
+  
+  .header-normal {
+    position: fixed;
+    transform: translate3d(0, -140%, 0);
+    transition: all 800ms ease-out;
+  }
   #menuClosed {
     display: none;
   }
