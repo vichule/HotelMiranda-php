@@ -14,14 +14,14 @@
         <div class="details-container">
             <div class="details-container__item">
                 <div class="details-container__item__text">
-                    <h1>DOUBLE BED</h1>
+                    <h1>Room Number {{ ($room['room_number']) }}</h1>
                     <div id="titleDiv">
-                        <h4>Luxury Double Bed</h4>
-                        <p>$345/Night</p>
+                        <h4>{{ ($room['room_type']) }}</h4>
+                        <p>${{ ($room['price']) }}/Night</p>
                     </div>
                 </div>
                 <div class="details-container__image">
-                    <img src="./assets/offers/luxuryRoom.jpg" alt="">
+                    <img src="{{ json_decode($room['photo_url'])[0] }}" alt="">
                 </div>
             </div>
             <div class="details-container__item">
@@ -63,18 +63,7 @@
             </div>
         </div>
 
-        <p id="introPar">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
-            natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-            qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-            amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-            dolore magnam aliquam quaerat voluptatem.
-        </p>
+        <p id="introPar">{{ ($room['description']) }}</p>
     </section>
 
     <section class="amenities">
@@ -119,7 +108,17 @@
         <h4>Related Rooms</h4>
         <div class="swiper relatedRooms-slider">
             <div class="swiper-wrapper relatedRooms-slider-wrapper">
+                @foreach ($related as $room)
                 <div class="swiper-slide relatedRooms-slider__slide">
+                    <img id="roomsImg" src="{{ json_decode($room['photo_url'])[0] }}" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt="" class="relatedRooms-slider__slide__complements">
+                    <h1 class="relatedRooms-slider__slide__title">{{ ($room['room_type']) }}</h1>
+                    <p class="relatedRooms-slider__slide__par">{{ ($room['description']) }}</p>
+                    <span class="relatedRooms-slider__slide__price">${{ ($room['price']) }}/Night</span>
+                    <a href="room_details.php?id={{$room['room_id']}}">Book Now</a>
+                </div>
+                @endforeach
+                {{-- <div class="swiper-slide relatedRooms-slider__slide">
                     <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
                     <img src="./assets/home/frame_rooms.jpg" alt="" class="relatedRooms-slider__slide__complements">
                     <h1 class="relatedRooms-slider__slide__title">Minimal Duplex Room</h1>
@@ -136,7 +135,7 @@
                         sed do eiusmod tempor.</p>
                     <span class="relatedRooms-slider__slide__price">$345/Night</span>
                     <a href="room_details.php">Book Now</a>
-                </div>
+                </div> --}}
             </div>
 
             <div class="relatedRooms-slider__backArrow" id="backArrow">&#10094;</div>
