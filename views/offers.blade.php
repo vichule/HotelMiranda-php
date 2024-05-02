@@ -11,25 +11,23 @@
     </section>
 
     <section class="offermain">
+        @foreach ($rooms as $room)
         <div class="offermain__item">
-            <a href="room_details.php"><img src="./assets/offers/luxuryRoom.jpg" alt=""></a>
+            <a href="room_details.php"><img src="{{ json_decode($room['photo_url'])[0] }}" alt=""></a>
             <div class="offermain__item-card">
                 <div class="offermain__item__container1">
                     <div class="offermain__item__container1__titles">
-                        <h1>DOUBLE BED</h1>
-                        <a href="room_details.php">Luxury Double Bed</a>
+                        <h1>{{ ($room['room_number']) }}</h1>
+                        <a href="room_details.php">{{ ($room['room_type']) }}</a>
                     </div>
                     <div class="offermain__item__container1__prices">
                         <p>$500/Night</p>
-                        <p>$345/Night</p>
+                        <p>${{ ($room['price']) }}/Night</p>
                     </div>
                 </div>
                 <div class="offermain__item__container2">
                     <div class="offermain__item__container2__description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>{{ ($room['description']) }}</p>
                         <a href="room_details.php" class="button">BOOK NOW</a>
                     </div>
                     <div class="offermain__item__container2__list">
@@ -52,129 +50,8 @@
                 </div>
             </div>
         </div>
-        <div class="offermain__item">
-            <a href="room_details.php"><img src="./assets/offers/luxuryRoom.jpg" alt=""></a>
-            <div class="offermain__item-card">
-                <div class="offermain__item__container1">
-                    <div class="offermain__item__container1__titles">
-                        <h1>DOUBLE BED</h1>
-                        <a href="room_details.php">Luxury Double Bed</a>
-                    </div>
-                    <div class="offermain__item__container1__prices">
-                        <p>$500/Night</p>
-                        <p>$345/Night</p>
-                    </div>
-                </div>
-                <div class="offermain__item__container2">
-                    <div class="offermain__item__container2__description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <a href="room_details.php" class="button">BOOK NOW</a>
-                    </div>
-                    <div class="offermain__item__container2__list">
-                        <ul>
-                            <li><img src="./assets/offers/air.png">Air conditioner</li>
-                            <li><img src="./assets/offers/breakfast.png">Breakfast</li>
-                            <li><img src="./assets/offers/cleaning.png">Cleaning</li>
-                            <li><img src="./assets/offers/grocery.png">Grocery</li>
-                            <li><img src="./assets/offers/shop.png">Shop near</li>
+        @endforeach
 
-                        </ul>
-                        <ul>
-                            <li><img src="./assets/offers/wifi.png">High speed WiFi</li>
-                            <li><img src="./assets/offers/kitchen.png">Kitchen</li>
-                            <li><img src="./assets/offers/shower.png">Shower</li>
-                            <li><img src="./assets/offers/bed.png">Single bed</li>
-                            <li><img src="./assets/offers/towels.png">Towels</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="offermain__item">
-            <a href="room_details.php"><img src="./assets/offers/luxuryRoom.jpg" alt=""></a>
-            <div class="offermain__item-card">
-                <div class="offermain__item__container1">
-                    <div class="offermain__item__container1__titles">
-                        <h1>DOUBLE BED</h1>
-                        <a href="room_details.php">Luxury Double Bed</a>
-                    </div>
-                    <div class="offermain__item__container1__prices">
-                        <p>$500/Night</p>
-                        <p>$345/Night</p>
-                    </div>
-                </div>
-                <div class="offermain__item__container2">
-                    <div class="offermain__item__container2__description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <a href="room_details.php" class="button">BOOK NOW</a>
-                    </div>
-                    <div class="offermain__item__container2__list">
-                        <ul>
-                            <li><img src="./assets/offers/air.png">Air conditioner</li>
-                            <li><img src="./assets/offers/breakfast.png">Breakfast</li>
-                            <li><img src="./assets/offers/cleaning.png">Cleaning</li>
-                            <li><img src="./assets/offers/grocery.png">Grocery</li>
-                            <li><img src="./assets/offers/shop.png">Shop near</li>
-
-                        </ul>
-                        <ul>
-                            <li><img src="./assets/offers/wifi.png">High speed WiFi</li>
-                            <li><img src="./assets/offers/kitchen.png">Kitchen</li>
-                            <li><img src="./assets/offers/shower.png">Shower</li>
-                            <li><img src="./assets/offers/bed.png">Single bed</li>
-                            <li><img src="./assets/offers/towels.png">Towels</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="offermain__item">
-            <a href="room_details.php"><img src="./assets/offers/luxuryRoom.jpg" alt=""></a>
-            <div class="offermain__item-card">
-                <div class="offermain__item__container1">
-                    <div class="offermain__item__container1__titles">
-                        <h1>DOUBLE BED</h1>
-                        <a href="room_details.php">Luxury Double Bed</a>
-                    </div>
-                    <div class="offermain__item__container1__prices">
-                        <p>$500/Night</p>
-                        <p>$345/Night</p>
-                    </div>
-                </div>
-                <div class="offermain__item__container2">
-                    <div class="offermain__item__container2__description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <a href="room_details.php" class="button">BOOK NOW</a>
-                    </div>
-                    <div class="offermain__item__container2__list">
-                        <ul>
-                            <li><img src="./assets/offers/air.png">Air conditioner</li>
-                            <li><img src="./assets/offers/breakfast.png">Breakfast</li>
-                            <li><img src="./assets/offers/cleaning.png">Cleaning</li>
-                            <li><img src="./assets/offers/grocery.png">Grocery</li>
-                            <li><img src="./assets/offers/shop.png">Shop near</li>
-
-                        </ul>
-                        <ul>
-                            <li><img src="./assets/offers/wifi.png">High speed WiFi</li>
-                            <li><img src="./assets/offers/kitchen.png">Kitchen</li>
-                            <li><img src="./assets/offers/shower.png">Shower</li>
-                            <li><img src="./assets/offers/bed.png">Single bed</li>
-                            <li><img src="./assets/offers/towels.png">Towels</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <section class="popularList">
