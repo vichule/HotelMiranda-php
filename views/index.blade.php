@@ -66,45 +66,27 @@
                 @foreach ($rooms as $room)
                 <div class="swiper-slide homerooms__slider__container_item">
                     <img id="roomsImg" src="{{ json_decode($room['photo_url'])[0] }}" alt="">
-                    
+                    <div class="homerooms__slider__descriptions">
+                        <div class="homerooms__slider__descriptions__item" id="description1">
+                            <div>
+                                <h1 class="homerooms__slider__descriptions__item__title">{{ ($room['room_type']) }}</h1>
+                                <p class="homerooms__slider__descriptions__item__par">{{ ($room['description']) }}</p>
+        
+                            </div>
+                            <div>
+                                <span class="homerooms__slider__descriptions__item__price">${{ ($room['price']) }}/Night</span>
+                            </div>
+        
+                        </div>
+                    </div>
                 </div>
                 @endforeach
-                {{-- <div class="swiper-slide homerooms__slider__container_item">
-                    <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
-                </div>
-                <div class="swiper-slide homerooms__slider__container_item">
-                    <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
-                </div>
-                <div class="swiper-slide homerooms__slider__container_item">
-                    <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
-                </div>
-                <div class="swiper-slide homerooms__slider__container_item">
-                    <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
-                </div>
-                <div class="swiper-slide homerooms__slider__container_item">
-                    <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
-                </div>
-                <div class="swiper-slide homerooms__slider__container_item">
-                    <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
-                </div> --}}
+                
 
             </div>
             <div class="homerooms-backArrow" id="backArrow">&#10094;</div>
             <div class="homerooms-forwardArrow" id="forwardArrow">&#10095;</div>
-            <div class="homerooms__slider__descriptions">
-                <div class="homerooms__slider__descriptions__item" id="description1">
-                    <div>
-                        <h1 class="homerooms__slider__descriptions__item__title">Minimal Duplex Room</h1>
-                        <p class="homerooms__slider__descriptions__item__par">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-
-                    </div>
-                    <div>
-                        <span class="homerooms__slider__descriptions__item__price">$345/Night</span>
-                    </div>
-
-                </div>
-            </div>
+            
         </div>
     </section>
     <section class="intro">

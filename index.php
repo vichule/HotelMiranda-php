@@ -12,5 +12,5 @@ $conn->close();
 
 
 $name = 'index';
-$variables = ['rooms' => $rooms];
+$variables = ['rooms' => $rooms, 'title' => 'Home'];
 renderTemplate($name, $variables);

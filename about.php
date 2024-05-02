@@ -2,4 +2,5 @@
 require_once(__DIR__ . '/utils/renderTemplate.php');
 
 $name = 'about';
-renderTemplate($name);
+$variables = ['title' => 'About Us'];
+renderTemplate($name, $variables);

@@ -2,4 +2,5 @@
 require_once(__DIR__ . '/utils/renderTemplate.php');
 
 $name = 'offers';
-renderTemplate($name);
+$variables = ['title' => 'Offers'];
+renderTemplate($name, $variables);
