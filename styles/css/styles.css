@@ -1806,6 +1806,7 @@ header {
 .popularList__slider__wrapper__slide {
   width: 10em;
   background-color: white;
+  min-height: 50em;
 }
 
 .popularList__slider__wrapper__slide__title {

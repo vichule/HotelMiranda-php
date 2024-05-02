@@ -17,7 +17,7 @@
             <div class="offermain__item-card">
                 <div class="offermain__item__container1">
                     <div class="offermain__item__container1__titles">
-                        <h1>{{ ($room['room_number']) }}</h1>
+                        <h1>Room Number {{ ($room['room_number']) }}</h1>
                         <a href="room_details.php">{{ ($room['room_type']) }}</a>
                     </div>
                     <div class="offermain__item__container1__prices">
@@ -59,7 +59,18 @@
         <h3 class="popularList__subtitle">Popular Rooms</h3>
         <div class="swiper popularList__slider">
             <div class="swiper-wrapper popularList__slider__wrapper">
+                @foreach ($popular as $room)
                 <div class="swiper-slide popularList__slider__wrapper__slide">
+                    <img id="roomsImg" src="{{ json_decode($room['photo_url'])[0] }}" alt="">
+                    <img src="./assets/home/frame_rooms.jpg" alt=""
+                        class="popularList__slider__wrapper__slide__complements">
+                    <h1 class="popularList__slider__wrapper__slide__title">{{ ($room['room_type']) }}</h1>
+                    <p class="popularList__slider__wrapper__slide__par">{{ ($room['description']) }}</p>
+                    <span class="popularList__slider__wrapper__slide__price">${{ ($room['price']) }}/Night</span>
+                    <a href="room_details.php">Book Now</a>
+                </div>
+                @endforeach
+                {{-- <div class="swiper-slide popularList__slider__wrapper__slide">
                     <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
                     <img src="./assets/home/frame_rooms.jpg" alt=""
                         class="popularList__slider__wrapper__slide__complements">
@@ -88,7 +99,7 @@
                         sicing elit, sed do eiusmod tempor.</p>
                     <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
                     <a href="room_details.php">Book Now</a>
-                </div>
+                </div> --}}
             </div>
 
             <div class="popularList__slider__backArrow">&#10094;</div>
