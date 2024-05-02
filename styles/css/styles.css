@@ -617,11 +617,13 @@ header {
   }
 
   .homerooms-backArrow {
-    right: 10em;
+    right: 30em;
+    bottom: 25em;
   }
 
   .homerooms-forwardArrow {
-    left: 60em;
+    left: 30em;
+    bottom: 25em;
   }
 
   .homerooms__slider__descriptions {
@@ -633,6 +635,7 @@ header {
     bottom: 3em;
     display: flex;
     align-items: center;
+    justify-content: center;
     right: 3.3em;
   }
 }
@@ -940,6 +943,23 @@ header {
   display: inline-block;
 }
 
+#backArrowRelated {
+  cursor: pointer;
+  position: relative;
+  background-color: #ebebeb;
+  padding: 1em;
+  display: inline-block;
+}
+
+#forwardArrowRelated {
+  cursor: pointer;
+  position: relative;
+  background-color: #BDAC8D;
+  padding: 1em;
+  color: white;
+  display: inline-block;
+}
+
 @media (width > 1000px) {
   .menu {
     background-position-x: 15em;
@@ -978,6 +998,15 @@ header {
     width: 4em;
     padding: 1.3em 0em 0em 1.5em;
     left: 82em;
+  }
+
+  #backArrowRelated {
+
+    display: none;
+  }
+
+  #forwardArrowRelated {
+    display: none;
   }
 
   .menu__sliderPics__container {
@@ -1619,12 +1648,14 @@ header {
   text-decoration: none;
   color: black;
   display: block;
+  width: 7em;
 }
 
 .offermain__item__container1__prices {
   position: relative;
   bottom: 5em;
   margin-right: 2em;
+  /* left: 3em; */
 }
 
 .offermain__item__container1__prices :nth-child(1) {
@@ -1668,11 +1699,11 @@ header {
   font-weight: 700;
   letter-spacing: 0.1em;
   width: 20em;
-  height: 5em;
+  height: 4em;
   border: none;
   margin-left: 1em;
   display: inline-block;
-  padding: 2em 0em 0em 7em;
+  padding: 1.5em 0em 0em 7em;
   text-decoration: none;
 }
 
@@ -2221,9 +2252,17 @@ header {
     width: 90%;
   }
 
+  .details-container__image img {
+    width: 100%;
+    height: 62em;
+  }
+
   #introPar {
-    width: 50em;
-    margin-left: 15%;
+    /* width: 50em; */
+    margin-left: 25%;
+    display: flex;
+    bottom: 5em;
+    position: relative;
   }
 
   #titleDiv {

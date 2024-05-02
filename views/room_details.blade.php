@@ -138,8 +138,8 @@
                 </div> --}}
             </div>
 
-            <div class="relatedRooms-slider__backArrow" id="backArrow">&#10094;</div>
-            <div class="relatedRooms-slider__forwardArrow" id="forwardArrow">&#10095;</div>
+            <div class="relatedRooms-slider__backArrow" id="backArrowRelated">&#10094;</div>
+            <div class="relatedRooms-slider__forwardArrow" id="forwardArrowRelated">&#10095;</div>
 
         </div>
     </section>
