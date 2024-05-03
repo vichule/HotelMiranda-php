@@ -10,6 +10,6 @@ LEFT JOIN room_photos rp ON r.id = rp.room_id
 LEFT JOIN photos p ON rp.photo_id = p.id
 LEFT JOIN room_amenities ra ON r.id = ra.room_id
 LEFT JOIN amenities a ON ra.amenities_id = a.id
-WHERE r.price > 450
+WHERE r.price > 300 AND r.discount = 0 
 GROUP BY r.id
 LIMIT 2;";

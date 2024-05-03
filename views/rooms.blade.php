@@ -19,7 +19,7 @@
                     <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement">
                     <h1 class="popularList__slider__wrapper__slide__title">{{ ($room['room_type']) }}</h1>
                     <p class="popularList__slider__wrapper__slide__par">{{ ($room['description']) }}</p>
-                    <span class="popularList__slider__wrapper__slide__price">${{ ($room['price']) }}/Night</span>
+                    <span class="popularList__slider__wrapper__slide__price">${{ discountPrice($room['discount'], $room['price']) }}/Night</span>
                     <a href="room_details.php?id={{$room['room_id']}}">Book Now</a>
                 </div>
                 @endforeach

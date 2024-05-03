@@ -17,7 +17,7 @@
                     <h1>Room Number {{ ($room['room_number']) }}</h1>
                     <div id="titleDiv">
                         <h4>{{ ($room['room_type']) }}</h4>
-                        <p>${{ ($room['price']) }}/Night</p>
+                        <p>${{ discountPrice($room['discount'], $room['price']) }}/Night</p>
                     </div>
                 </div>
                 <div class="details-container__image">
@@ -114,7 +114,7 @@
                     <img src="./assets/home/frame_rooms.jpg" alt="" class="relatedRooms-slider__slide__complements">
                     <h1 class="relatedRooms-slider__slide__title">{{ ($room['room_type']) }}</h1>
                     <p class="relatedRooms-slider__slide__par">{{ ($room['description']) }}</p>
-                    <span class="relatedRooms-slider__slide__price">${{ ($room['price']) }}/Night</span>
+                    <span class="relatedRooms-slider__slide__price">${{ discountPrice($room['discount'], $room['price']) }}/Night</span>
                     <a href="room_details.php?id={{$room['room_id']}}">Book Now</a>
                 </div>
                 @endforeach

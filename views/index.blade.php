@@ -74,7 +74,7 @@
         
                             </div>
                             <div>
-                                <span class="homerooms__slider__descriptions__item__price">${{ ($room['price']) }}/Night</span>
+                                <span class="homerooms__slider__descriptions__item__price">${{ discountPrice($room['discount'], $room['price']) }}/Night</span>
                             </div>
         
                         </div>

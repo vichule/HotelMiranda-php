@@ -21,8 +21,8 @@
                         <a href="room_details.php?id={{$room['room_id']}}">{{ ($room['room_type']) }}</a>
                     </div>
                     <div class="offermain__item__container1__prices">
-                        <p>$500/Night</p>
                         <p>${{ ($room['price']) }}/Night</p>
+                        <p>${{ discountPrice($room['discount'], $room['price']) }}/Night</p>
                     </div>
                 </div>
                 <div class="offermain__item__container2">
