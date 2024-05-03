@@ -21,6 +21,5 @@ $stmt->close();
 $conn->close();
 
 
-// $name = 'room_details';
-$variables = ['title' => 'Room Details', 'room' => $room, 'related' => $related];
+$variables = ['room' => $room, 'related' => $related];
 renderTemplate('room_details', $variables);

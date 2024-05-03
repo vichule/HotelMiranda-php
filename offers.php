@@ -11,6 +11,5 @@ $popular = $conn->query($getPopular);
 
 $conn->close();
 
-// $name = 'offers';
-$variables = ['title' => 'Offers', 'rooms' => $rooms, 'popular' => $popular];
+$variables = ['rooms' => $rooms, 'popular' => $popular];
 renderTemplate('offers', $variables);

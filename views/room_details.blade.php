@@ -1,4 +1,5 @@
 @extends('layout')
+@section('title', 'Room Details')
 @section('content')
     <section class="bannerGeneric">
         <p class="bannerGeneric__title">THE ULTIMATE LUXURY EXPERIENCE</p>
@@ -121,24 +122,6 @@
                     <a href="room_details.php?id={{$room['room_id']}}">Book Now</a>
                 </div>
                 @endforeach
-                {{-- <div class="swiper-slide relatedRooms-slider__slide">
-                    <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
-                    <img src="./assets/home/frame_rooms.jpg" alt="" class="relatedRooms-slider__slide__complements">
-                    <h1 class="relatedRooms-slider__slide__title">Minimal Duplex Room</h1>
-                    <p class="relatedRooms-slider__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit,
-                        sed do eiusmod tempor.</p>
-                    <span class="relatedRooms-slider__slide__price">$345/Night</span>
-                    <a href="room_details.php">Book Now</a>
-                </div>
-                <div class="swiper-slide relatedRooms-slider__slide">
-                    <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
-                    <img src="./assets/home/frame_rooms.jpg" alt="" class="relatedRooms-slider__slide__complements">
-                    <h1 class="relatedRooms-slider__slide__title">Minimal Duplex Room</h1>
-                    <p class="relatedRooms-slider__slide__par">Lorem ipsum dolor sit amet, consectetur adipi sicing elit,
-                        sed do eiusmod tempor.</p>
-                    <span class="relatedRooms-slider__slide__price">$345/Night</span>
-                    <a href="room_details.php">Book Now</a>
-                </div> --}}
             </div>
 
             <div class="relatedRooms-slider__backArrow" id="backArrowRelated">&#10094;</div>

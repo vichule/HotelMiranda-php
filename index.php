@@ -10,6 +10,5 @@ $rooms = $conn->query($getRooms);
 $conn->close();
 
 
-// $name = 'index';
-$variables = ['rooms' => $rooms, 'title' => 'Home'];
+$variables = ['rooms' => $rooms];
 renderTemplate('index', $variables);

@@ -1,6 +1,5 @@
 <?php
 require_once(__DIR__ . '/utils/setup.php');
 
-// $name = 'contact';
-$variables = ['title' => 'Contact'];
+$variables = [];
 renderTemplate('contact', $variables);

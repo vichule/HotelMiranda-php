@@ -1,4 +1,5 @@
 @extends('layout')
+@section('title', 'Home')
 @section('content')
     <section class="banner">
         <p class="banner__title">THE ULTIMATE LUXURY EXPERIENCE</p>

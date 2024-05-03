@@ -1,4 +1,5 @@
 @extends('layout')
+@section('title', 'Offers')
 @section('content')
     <section class="bannerGeneric">
         <p class="bannerGeneric__title">THE ULTIMATE LUXURY EXPERIENCE</p>
