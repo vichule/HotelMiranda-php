@@ -1,6 +1,6 @@
 <?php
-require_once(__DIR__ . '/utils/renderTemplate.php');
+require_once(__DIR__ . '/utils/setup.php');
 
-$name = 'about';
+// $name = 'about';
 $variables = ['title' => 'About Us'];
-renderTemplate($name, $variables);
+renderTemplate('about', $variables);

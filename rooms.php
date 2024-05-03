@@ -1,15 +1,14 @@
 <?php
-require_once(__DIR__ . '/utils/renderTemplate.php');
-require_once __DIR__ . '/utils/queries/rooms/getRoomsQuery.php';
+require_once(__DIR__ . '/utils/setup.php');
+require_once( __DIR__ . '/utils/queries/rooms/getRoomsQuery.php');
 
-$query = $getRooms;
 
-$rooms = $conn->query($query);
+$rooms = $conn->query($getRooms);
 
 
 
 $conn->close();
 
-$name = 'rooms';
+// $name = 'rooms';
 $variables = ['title' => 'Rooms','rooms' => $rooms];
-renderTemplate($name, $variables);
+renderTemplate('rooms', $variables);
