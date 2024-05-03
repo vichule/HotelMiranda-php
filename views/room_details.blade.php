@@ -70,22 +70,25 @@
         <h4>Amenities</h4>
         <div class="amenities-list">
             <ul>
-                <li><img src="./assets/offers/air.png">Air conditioner</li>
+                @foreach (json_decode($room['amenity_name']) as $amenity)
+                <li><img src="./assets/offers/air.png">{{$amenity}}</li>
+                @endforeach
+                {{-- <li><img src="./assets/offers/air.png">Air conditioner</li>
                 <li><img src="./assets/offers/breakfast.png">Breakfast</li>
                 <li><img src="./assets/offers/cleaning.png">Cleaning</li>
                 <li><img src="./assets/offers/grocery.png">Grocery</li>
                 <li><img src="./assets/offers/shop.png">Shop near</li>
                 <li><img src="./assets/detailsroom/headset.png">24/7 Online Support</li>
-                <li><img src="./assets/detailsroom/lock.png">Smart Security</li>
+                <li><img src="./assets/detailsroom/lock.png">Smart Security</li> --}}
             </ul>
             <ul>
-                <li><img src="./assets/offers/wifi.png">High speed WiFi</li>
+                {{-- <li><img src="./assets/offers/wifi.png">High speed WiFi</li>
                 <li><img src="./assets/offers/kitchen.png">Kitchen</li>
                 <li><img src="./assets/offers/shower.png">Shower</li>
                 <li><img src="./assets/offers/bed.png">Single bed</li>
                 <li><img src="./assets/offers/towels.png">Towels</li>
                 <li><img src="./assets/detailsroom/key.png">Strong Locker</li>
-                <li><img src="./assets/detailsroom/person.png">Expert Team</li>
+                <li><img src="./assets/detailsroom/person.png">Expert Team</li> --}}
             </ul>
         </div>
         <div class="amenities-profile">
