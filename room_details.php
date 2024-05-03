@@ -2,7 +2,7 @@
 require_once(__DIR__ . '/utils/setup.php');
 require_once( __DIR__ . '/utils/queries/rooms/getRoomQuery.php');
 require_once( __DIR__ . '/utils/queries/rooms/getRelatedRooms.php');
-
+require_once(__DIR__ . '/utils/getAmenities.php');
 
 $related = $conn->query($getRelated);
 $stmt = $conn->prepare($getRoom);

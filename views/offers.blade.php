@@ -35,7 +35,7 @@
                         <div class="offermain__item__container2__list">
                             <ul>
                                 @foreach (json_decode($room['amenity_name']) as $amenity)
-                                    <li><img src="./assets/offers/air.png">{{ $amenity }}</li>
+                                    <li><img src="{{ getAmenities($amenity)}}">{{ $amenity }}</li>
                                 @endforeach
                                 {{-- <li><img src="./assets/offers/air.png">Air conditioner</li>
                                 <li><img src="./assets/offers/breakfast.png">Breakfast</li>
