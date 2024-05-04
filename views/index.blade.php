@@ -36,7 +36,8 @@
         <div class="homeAbout__secondContainer">
             <div class="homeAbout__secondContainer__card1">
                 <img src="./assets/home/team.jpg" alt="" class="homeAbout__secondContainer__card1__pic">
-                <div class="homeAbout__secondContainer__card1__teamContainer" style="background-image: url('./assets/home/backTeam.png')">
+                <div class="homeAbout__secondContainer__card1__teamContainer"
+                    style="background-image: url('./assets/home/backTeam.png')">
                     <img src="./assets/home/teamImg.png" alt=""
                         class="homeAbout__secondContainer__card1__teamContainer__img">
                     <h1 class="homeAbout__secondContainer__card1__teamContainer__title">Strong Team</h1>
@@ -61,33 +62,39 @@
     <section class="homerooms">
         <h1 class="homerooms__title">ROOMS</h1>
         <h2 class="homerooms__subtitle">Hand Picked Rooms</h2>
-        <img src="./assets/home/frame_rooms.jpg" alt="" class="homerooms__complements">
+        {{-- <img src="./assets/home/frame_rooms.jpg" alt="" class="homerooms__complements"> --}}
         <div class="swiper homerooms__slider">
             <div class="swiper-wrapper homerooms__slider__container">
                 @foreach ($rooms as $room)
-                <div class="swiper-slide homerooms__slider__container_item">
-                    <img id="roomsImg" src="{{ json_decode($room['photo_url'])[0] }}" alt="">
-                    <div class="homerooms__slider__descriptions">
-                        <div class="homerooms__slider__descriptions__item" id="description1">
-                            <div>
-                                <h1 class="homerooms__slider__descriptions__item__title">{{ ($room['room_type']) }}</h1>
-                                <p class="homerooms__slider__descriptions__item__par">{{ ($room['description']) }}</p>
-        
+                    <div class="swiper-slide homerooms__slider__container_item">
+                        <div class="homerooms__framediv">
+                            @foreach (json_decode($room['amenity_name']) as $amenity)
+                                <img src="{{ getAmenities($amenity) }}" class="homerooms__complements">
+                            @endforeach
+                        </div>
+                        <img id="roomsImg" src="{{ json_decode($room['photo_url'])[0] }}" alt="">
+                        <div class="homerooms__slider__descriptions">
+                            <div class="homerooms__slider__descriptions__item" id="description1">
+                                <div>
+                                    <h1 class="homerooms__slider__descriptions__item__title">{{ $room['room_type'] }}</h1>
+                                    <p class="homerooms__slider__descriptions__item__par">{{ $room['description'] }}</p>
+
+                                </div>
+                                <div>
+                                    <span
+                                        class="homerooms__slider__descriptions__item__price">${{ discountPrice($room['discount'], $room['price']) }}/Night</span>
+                                </div>
+
                             </div>
-                            <div>
-                                <span class="homerooms__slider__descriptions__item__price">${{ discountPrice($room['discount'], $room['price']) }}/Night</span>
-                            </div>
-        
                         </div>
                     </div>
-                </div>
                 @endforeach
-                
+
 
             </div>
             <div class="homerooms-backArrow" id="backArrow">&#10094;</div>
             <div class="homerooms-forwardArrow" id="forwardArrow">&#10095;</div>
-            
+
         </div>
     </section>
     <section class="intro">

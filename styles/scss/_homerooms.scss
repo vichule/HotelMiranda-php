@@ -1,7 +1,7 @@
-.homerooms{
+.homerooms {
     text-align: center;
 
-    &__title{
+    &__title {
         text-align: center;
         color: #777777;
         font-family: Archivo;
@@ -10,7 +10,8 @@
         line-height: 1.8em;
         letter-spacing: 0.1em;
     }
-    &__subtitle{
+
+    &__subtitle {
         font-family: Old Standard TT;
         font-size: 5.5em;
         font-weight: 400;
@@ -18,19 +19,32 @@
         margin-top: 0.4em;
         margin-bottom: 0.2em;
     }
-    &__complements{
-        width: 25em;
-        height: 5em;
+
+    &__complements {
+        height: 4em;
         z-index: 10;
         position: relative;
-        top: 3em;
+        width: 5em;
+        padding: 8px;
+        filter: brightness(0);
     }
-    &__slider{
 
-        
-        &__descriptions{
+    &__framediv {
+        display: flex;
+        background: ghostwhite;
+        height: 3em;
+        position: absolute;
+        width: 100%;
+        justify-content: center;
+        padding: 0.5em;
+    }
 
-            &__item{
+    &__slider {
+
+
+        &__descriptions {
+
+            &__item {
                 width: 34.5em;
                 position: relative;
                 bottom: 5em;
@@ -39,14 +53,15 @@
                 padding: 1em 4em 1em 4em;
                 display: inline-block;
 
-                &__title{
+                &__title {
                     font-family: Old Standard TT;
                     font-size: 2.8em;
                     font-weight: 400;
                     letter-spacing: -0.05em;
                     text-align: center;
                 }
-                &__par{
+
+                &__par {
                     color: #777777;
                     font-family: Archivo;
                     font-size: 1em;
@@ -56,7 +71,8 @@
                     padding: 1em 4em 1em 4em;
 
                 }
-                &__price{
+
+                &__price {
                     font-size: 2em;
                     font-family: Archivo;
                     font-weight: 700;
@@ -67,14 +83,16 @@
             }
         }
     }
-    &-backArrow{
+
+    &-backArrow {
         bottom: 12em;
         width: 3em;
         height: 3em;
         z-index: 20;
         right: 15em;
     }
-    &-forwardArrow{
+
+    &-forwardArrow {
         bottom: 12em;
         width: 3em;
         height: 3em;
@@ -83,7 +101,7 @@
     }
 }
 
-#roomsImg{
+#roomsImg {
     width: 100%;
     height: 25em;
     margin-top: -3em;
@@ -91,33 +109,33 @@
 
 @media (width > 1000px) {
 
-    #roomsImg{
+    #roomsImg {
         width: 100%;
         height: 35em;
     }
 
-    .homerooms{
-        &-backArrow{
+    .homerooms {
+        &-backArrow {
             right: 10em;
         }
-        &-forwardArrow{
-            left: 60em;
-        }   
-        &__slider{
 
-            &__descriptions{
+        &-forwardArrow {
+            left: 60em;
+        }
+
+        &__slider {
+
+            &__descriptions {
                 display: inline-block;
 
-                &__item{
+                &__item {
                     width: 50em;
                     bottom: 3em;
                     display: flex;
                     align-items: center;
-                    right: 3.3em;
                 }
             }
-        } 
+        }
     }
-    
-}
 
+}
