@@ -101,7 +101,11 @@
                 @foreach ($related as $room)
                 <div class="swiper-slide relatedRooms-slider__slide">
                     <img id="roomsImg" src="{{ json_decode($room['photo_url'])[0] }}" alt="">
-                    <img src="./assets/home/frame_rooms.jpg" alt="" class="relatedRooms-slider__slide__complements">
+                    <div id="amenities_frame">
+                        @foreach (json_decode($room['amenity_name']) as $amenity)
+                            <img src="{{ getAmenities($amenity) }}" id="roomsComplement">
+                        @endforeach
+                    </div>
                     <h1 class="relatedRooms-slider__slide__title">{{ ($room['room_type']) }}</h1>
                     <p class="relatedRooms-slider__slide__par">{{ ($room['description']) }}</p>
                     <span class="relatedRooms-slider__slide__price">${{ discountPrice($room['discount'], $room['price']) }}/Night</span>
