@@ -35,22 +35,10 @@
                         <div class="offermain__item__container2__list">
                             <ul>
                                 @foreach (json_decode($room['amenity_name']) as $amenity)
-                                    <li><img src="{{ getAmenities($amenity)}}">{{ $amenity }}</li>
+                                    <li><img src="{{ getAmenities($amenity) }}">{{ $amenity }}</li>
                                 @endforeach
-                                {{-- <li><img src="./assets/offers/air.png">Air conditioner</li>
-                                <li><img src="./assets/offers/breakfast.png">Breakfast</li>
-                                <li><img src="./assets/offers/cleaning.png">Cleaning</li>
-                                <li><img src="./assets/offers/grocery.png">Grocery</li>
-                                <li><img src="./assets/offers/shop.png">Shop near</li> --}}
+                            </ul>
 
-                            </ul>
-                            <ul>
-                                {{-- <li><img src="./assets/offers/wifi.png">High speed WiFi</li>
-                                <li><img src="./assets/offers/kitchen.png">Kitchen</li>
-                                <li><img src="./assets/offers/shower.png">Shower</li>
-                                <li><img src="./assets/offers/bed.png">Single bed</li>
-                                <li><img src="./assets/offers/towels.png">Towels</li> --}}
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -67,44 +55,17 @@
                 @foreach ($popular as $room)
                     <div class="swiper-slide popularList__slider__wrapper__slide">
                         <img id="roomsImg" src="{{ json_decode($room['photo_url'])[0] }}" alt="">
-                        <img src="./assets/home/frame_rooms.jpg" alt=""
-                            class="popularList__slider__wrapper__slide__complements">
+                        <div id="amenities_frame">
+                            @foreach (json_decode($room['amenity_name']) as $amenity)
+                                <img src="{{ getAmenities($amenity) }}" id="roomsComplement">
+                            @endforeach
+                        </div>
                         <h1 class="popularList__slider__wrapper__slide__title">{{ $room['room_type'] }}</h1>
                         <p class="popularList__slider__wrapper__slide__par">{{ $room['description'] }}</p>
                         <span class="popularList__slider__wrapper__slide__price">${{ $room['price'] }}/Night</span>
                         <a href="room_details.php?id={{ $room['room_id'] }}">Book Now</a>
                     </div>
                 @endforeach
-                {{-- <div class="swiper-slide popularList__slider__wrapper__slide">
-                    <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
-                    <img src="./assets/home/frame_rooms.jpg" alt=""
-                        class="popularList__slider__wrapper__slide__complements">
-                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
-                        sicing elit, sed do eiusmod tempor.</p>
-                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                    <a href="room_details.php">Book Now</a>
-                </div>
-                <div class="swiper-slide popularList__slider__wrapper__slide">
-                    <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
-                    <img src="./assets/home/frame_rooms.jpg" alt=""
-                        class="popularList__slider__wrapper__slide__complements">
-                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
-                        sicing elit, sed do eiusmod tempor.</p>
-                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                    <a href="room_details.php">Book Now</a>
-                </div>
-                <div class="swiper-slide popularList__slider__wrapper__slide">
-                    <img id="roomsImg" src="./assets/home/minimal_room.jpg" alt="">
-                    <img src="./assets/home/frame_rooms.jpg" alt=""
-                        class="popularList__slider__wrapper__slide__complements">
-                    <h1 class="popularList__slider__wrapper__slide__title">Minimal Duplex Room</h1>
-                    <p class="popularList__slider__wrapper__slide__par">Lorem ipsum dolor sit amet, consectetur adipi
-                        sicing elit, sed do eiusmod tempor.</p>
-                    <span class="popularList__slider__wrapper__slide__price">$345/Night</span>
-                    <a href="room_details.php">Book Now</a>
-                </div> --}}
             </div>
 
             <div class="popularList__slider__backArrow">&#10094;</div>
