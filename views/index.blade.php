@@ -8,7 +8,7 @@
         <button class="banner__indexBtn2">LEARN MORE</button>
     </section>
     <section class="dateCheck">
-        <form id="datecheckform" class="dateCheck__container">
+        <form id="datecheckform" class="dateCheck__container" action="rooms.php">
             <div>
                 <label for="arrival" class="dateCheck__container__label">Arrival Date</label>
                 <input type="date" id="arrival" name="arrival" value="2024-03-24" min="2024-03-01" max="2028-12-31"
