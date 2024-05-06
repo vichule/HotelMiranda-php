@@ -49,25 +49,32 @@
             <ul>
                 <div class="contactForm__form__inputContainer">
                     <li>
-                        <input type="text" name="field1" class="field-style field-full" placeholder="Your full name" />
+                        <input type="text" name="first_name" class="field-style field-full" placeholder="Your first name" />
                     </li>
                     <li>
-                        <input type="text" name="field2" class="field-style field-full"
-                            placeholder="Add phone number" />
+                        <input type="text" name="last_name" class="field-style field-full" placeholder="Your last name" />
+                    </li>
+                    
+                    
+                </div>
+                
+                <div class="contactForm__form__inputContainer">
+                    <li>
+                        <input type="email" name="email" class="field-style field-full"
+                            placeholder="Enter email address" />
+                    </li>
+                    <li>
+                        <input type="text" name="subject" class="field-style field-full" placeholder="Enter subject" />
                     </li>
                 </div>
                 <div class="contactForm__form__inputContainer">
                     <li>
-                        <input type="email" name="field3" class="field-style field-full"
-                            placeholder="Enter email address" />
-                    </li>
-                    <li>
-                        <input type="text" name="field4" class="field-style field-full" placeholder="Enter subject" />
+                        <input type="text" name="phone" class="field-style field-full"
+                            placeholder="Add phone number" />
                     </li>
                 </div>
-
                 <li>
-                    <textarea name="field5" class="field-style" placeholder="Enter message"></textarea>
+                    <textarea name="message" class="field-style" placeholder="Enter message"></textarea>
                 </li>
                 <li>
                     <input type="submit" value="SEND" class="contactBtn" />

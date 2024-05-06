@@ -7,7 +7,7 @@
         <div class="bannerGeneric__nav">
             <a href="index.php" id="homeBtn">Home</a>
             <p>|</p>
-            <a href="room_details.php" id="currentBtn">Room Details</a>
+            <a href="room_details.php?id={{$room['room_id']}}" id="currentBtn">Room Details</a>
         </div>
     </section>
 
@@ -32,17 +32,21 @@
                     <ul>
                         <li>
                             <label for="checkin" class="">Check In</label>
-                            <input type="date" id="checkin" name="checkin" value="2024-03-24" min="2024-03-01"
+                            <input type="date" id="check_in" name="check_in" value="2024-03-24" min="2024-03-01"
                                 max="2028-12-31" class="" />
                         </li>
                         <li>
                             <label for="checkout" class="">Check Out</label>
-                            <input type="date" id="checkout" name="checkout" value="2024-03-30" min="2024-03-25"
+                            <input type="date" id="check_out" name="check_out" value="2024-03-30" min="2024-03-25"
                                 max="2028-12-31" class="" />
                         </li>
                         <li>
-                            <label for="name">Full Name</label>
-                            <input type="text" name="name" id="name">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="first_name" id="first_name">
+                        </li>
+                        <li>
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" id="last_name">
                         </li>
                         <li>
                             <label for="email">Email</label>
