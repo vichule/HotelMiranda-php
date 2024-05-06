@@ -4,8 +4,10 @@
     <section class="banner">
         <p class="banner__title">THE ULTIMATE LUXURY EXPERIENCE</p>
         <h1 class="banner__subtitle">The Perfect Base For You</h1>
-        <button class="banner__indexBtn1">TAKE A TOUR</button>
-        <button class="banner__indexBtn2">LEARN MORE</button>
+        <a href="about.php" ><button class="banner__indexBtn1">TAKE A TOUR</button></a>
+        
+        
+        <a href="contact.php" ><button class="banner__indexBtn2">LEARN MORE</button></a>
     </section>
     <section class="dateCheck">
         <form id="datecheckform" class="dateCheck__container" action="rooms.php">
@@ -30,7 +32,7 @@
             <p class="homeAbout__firstContainer__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <button class="homeAbout__firstContainer__btn">BOOK NOW</button>
+                <a href="rooms.php" ><button class="homeAbout__firstContainer__btn">BOOK NOW</button></a>
         </div>
 
         <div class="homeAbout__secondContainer">
