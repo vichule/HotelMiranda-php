@@ -21,11 +21,11 @@
     }
 
     &__complements {
-        height: 4em;
+        height: 2em;
         z-index: 10;
         position: relative;
+        padding: 2px;
         width: 5em;
-        padding: 8px;
         filter: brightness(0);
     }
 
@@ -116,11 +116,13 @@
 
     .homerooms {
         &-backArrow {
-            right: 10em;
+            right: 30em;
+            bottom: 25em;
         }
 
         &-forwardArrow {
-            left: 60em;
+            left: 30em;
+            bottom: 25em;
         }
 
         &__slider {

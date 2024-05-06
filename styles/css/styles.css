@@ -1,5 +1,4 @@
-html,
-* {
+html, * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -27,13 +26,11 @@ header {
   background-color: white;
   align-items: center;
 }
-
 .header__container__item1 {
   display: flex;
   min-height: 10em;
   padding-left: 1em;
 }
-
 .header__container__item2 {
   display: flex;
   flex-wrap: wrap;
@@ -41,11 +38,9 @@ header {
   min-width: 8em;
   padding-right: 2em;
 }
-
 .header__container__navbar {
   list-style-type: none;
 }
-
 .header__container__navbar a {
   text-decoration: none;
   color: black;
@@ -94,78 +89,62 @@ header {
   display: none;
 }
 
-
-
 @media (width > 1000px) {
-
-  .header-down {
-    position: fixed;
-    transition: all 800ms ease-out;
-    transform: translate3d(0, -50%, 0);
-  }
-
-  .header-normal {
-    position: fixed;
-    transform: translate3d(0, -140%, 0);
-    transition: all 800ms ease-out;
-  }
-
   #menuClosed {
     display: none;
   }
-
   #menuOpened {
     display: none;
   }
-
   #headerPar {
     display: block;
     position: absolute;
     bottom: 10em;
   }
-
   header {
     padding: 5em 20em 0em 20em;
     position: relative;
   }
-
   .header__container {
     position: relative;
     top: 5em;
   }
-
   .header__container__navbar {
     display: flex;
     justify-content: space-between;
     width: 30em;
   }
-
   .header__container__navbar li {
     font-family: Archivo;
     font-size: 1.3em;
     font-weight: 600;
   }
-
   .header__button {
     margin-right: 1.5em;
   }
-
   .header__button img {
     border: 1px solid lightgrey;
     padding: 1em;
   }
-
   .header__mobile-menu {
     display: none;
   }
+  .header-down {
+    position: fixed;
+    transition: all 800ms ease-out;
+    transform: translate3d(0, -50%, 0);
+  }
+  .header-normal {
+    position: fixed;
+    transform: translate3d(0, -140%, 0);
+    transition: all 800ms ease-out;
+  }
 }
-
 .banner {
   background-color: #333333;
   color: white;
   padding: 15em 1.5em 8em 1.5em;
 }
-
 .banner__title {
   font-family: Archivo;
   font-size: 1.2em;
@@ -175,7 +154,6 @@ header {
   text-align: left;
   max-width: 15em;
 }
-
 .banner__subtitle {
   font-family: Old Standard TT;
   font-size: 5.6em;
@@ -185,7 +163,6 @@ header {
   margin-top: 0.8em;
   margin-bottom: 0.8em;
 }
-
 .banner__indexBtn1 {
   background: #BEAD8E;
   color: white;
@@ -199,7 +176,6 @@ header {
   margin-right: 2em;
   border: none;
 }
-
 .banner__indexBtn2 {
   color: white;
   background: transparent;
@@ -218,24 +194,20 @@ header {
   .banner {
     padding: 15em 1.5em 8em 28.5em;
   }
-
   .banner__title {
     max-width: 25em;
   }
-
   .banner__subtitle {
     font-size: 7.6em;
     max-width: 7em;
     margin-top: 0.3em;
   }
 }
-
 .dateCheck {
   background-color: #222222;
   color: white;
   padding: 3em 1.5em 3em 1.5em;
 }
-
 .dateCheck__container__label {
   font-family: Roboto;
   font-size: 1.5em;
@@ -244,7 +216,6 @@ header {
   text-align: left;
   display: block;
 }
-
 .dateCheck__container__input1 {
   margin-bottom: 1em;
   background: transparent;
@@ -257,7 +228,6 @@ header {
   line-height: 1.6em;
   padding-left: 2em;
 }
-
 .dateCheck__container__input1::-webkit-calendar-picker-indicator {
   position: absolute;
   left: 0;
@@ -265,7 +235,6 @@ header {
   background-image: url("/assets/home/calendar.png");
   margin-left: 1.5em;
 }
-
 .dateCheck__container__input2 {
   background: transparent;
   border: none;
@@ -277,7 +246,6 @@ header {
   line-height: 1.6em;
   padding-left: 2em;
 }
-
 .dateCheck__container__input2::-webkit-calendar-picker-indicator {
   position: absolute;
   left: 0;
@@ -285,7 +253,6 @@ header {
   background-image: url("/assets/home/calendar.png");
   margin-left: 1.5em;
 }
-
 .dateCheck__container__checkBtn {
   background: #BEAD8E;
   color: white;
@@ -308,38 +275,31 @@ header {
     align-items: center;
     padding: 3em 15em 3em 20em;
   }
-
   .dateCheck__container {
     display: flex;
   }
-
   .dateCheck__container__input1 {
     margin-right: 5em;
   }
-
   .dateCheck__container__input1::-webkit-calendar-picker-indicator {
     position: relative;
     left: -33em;
   }
-
   .dateCheck__container__input2::-webkit-calendar-picker-indicator {
     position: relative;
     left: -33em;
   }
-
   .dateCheck__container__checkBtn {
     min-width: 25em;
     margin-top: 0em;
     margin-left: 10em;
   }
 }
-
 .homeAbout {
   background: linear-gradient(to top, white 0%, white 65%, #f6f6f6 65%, #f6f6f6 100%);
   margin-top: 5em;
   padding: 5em 3em 5em 3em;
 }
-
 .homeAbout__firstContainer__title {
   color: #777777;
   font-family: Archivo;
@@ -348,7 +308,6 @@ header {
   line-height: 1.8em;
   letter-spacing: 0.1em;
 }
-
 .homeAbout__firstContainer__subtitle {
   font-family: Old Standard TT;
   font-size: 5.5em;
@@ -358,7 +317,6 @@ header {
   margin-bottom: 0.5em;
   max-width: 10em;
 }
-
 .homeAbout__firstContainer__par {
   color: #777777;
   font-family: Archivo;
@@ -368,7 +326,6 @@ header {
   text-align: left;
   max-width: 29em;
 }
-
 .homeAbout__firstContainer__btn {
   background: #BEAD8E;
   color: white;
@@ -382,19 +339,16 @@ header {
   border: none;
   margin: 2em 0em 5em 0em;
 }
-
 .homeAbout__secondContainer {
   display: grid;
   align-items: center;
   justify-items: center;
 }
-
 .homeAbout__secondContainer__card1__pic {
   width: 23.5em;
   height: 25em;
   margin-left: 4em;
 }
-
 .homeAbout__secondContainer__card1__teamContainer {
   margin: -1em 4em 5em 4em;
   min-height: 25em;
@@ -407,12 +361,10 @@ header {
   background-size: 10em;
   max-width: 25em;
 }
-
 .homeAbout__secondContainer__card1__teamContainer__img {
   margin-left: 6em;
   width: 5em;
 }
-
 .homeAbout__secondContainer__card1__teamContainer__title {
   font-family: Old Standard TT;
   font-size: 3em;
@@ -421,7 +373,6 @@ header {
   text-align: center;
   margin: 0.5em 0em 0.5em 0em;
 }
-
 .homeAbout__secondContainer__card1__teamContainer__par {
   font-family: Roboto;
   font-size: 1.1em;
@@ -429,13 +380,11 @@ header {
   line-height: 1.5em;
   text-align: center;
 }
-
 .homeAbout__secondContainer__card2__pic {
   width: 23.5em;
   height: 25em;
   margin-left: 4em;
 }
-
 .homeAbout__secondContainer__card2__roomContainer {
   color: white;
   background-color: black;
@@ -444,12 +393,10 @@ header {
   padding: 4em 2em 4em 2em;
   max-width: 23.5em;
 }
-
 .homeAbout__secondContainer__card2__roomContainer__img {
   margin-left: 7em;
   width: 5em;
 }
-
 .homeAbout__secondContainer__card2__roomContainer__title {
   font-family: Old Standard TT;
   font-size: 3em;
@@ -458,7 +405,6 @@ header {
   text-align: center;
   margin: 0.5em 0em 0.5em 0em;
 }
-
 .homeAbout__secondContainer__card2__roomContainer__par {
   font-family: Roboto;
   font-size: 1.1em;
@@ -473,57 +419,45 @@ header {
     flex-direction: row-reverse;
     justify-content: center;
   }
-
   .homeAbout__firstContainer {
     margin: 10em 0em 0em 5em;
     max-width: 40em;
   }
-
   .homeAbout__secondContainer {
     display: flex;
   }
-
   .homeAbout__secondContainer__card1 {
     display: flex;
     flex-flow: column-reverse;
   }
-
   .homeAbout__secondContainer__card1__pic {
     width: 25em;
     margin-left: 0em;
   }
-
   .homeAbout__secondContainer__card1__teamContainer {
     margin: 0em 0em 2em 0em;
   }
-
   .homeAbout__secondContainer__card1__teamContainer__par {
     max-width: 17em;
   }
-
   .homeAbout__secondContainer__card2 {
     padding-top: 5em;
   }
-
   .homeAbout__secondContainer__card2__pic {
     width: 25em;
     margin-bottom: 3em;
   }
-
   .homeAbout__secondContainer__card2__roomContainer {
     max-width: 25em;
     min-width: 25em;
   }
-
   .homeAbout__secondContainer__card2__roomContainer__par {
     max-width: 17em;
   }
 }
-
 .homerooms {
   text-align: center;
 }
-
 .homerooms__title {
   text-align: center;
   color: #777777;
@@ -533,7 +467,6 @@ header {
   line-height: 1.8em;
   letter-spacing: 0.1em;
 }
-
 .homerooms__subtitle {
   font-family: Old Standard TT;
   font-size: 5.5em;
@@ -542,7 +475,6 @@ header {
   margin-top: 0.4em;
   margin-bottom: 0.2em;
 }
-
 .homerooms__complements {
   height: 2em;
   z-index: 10;
@@ -551,7 +483,6 @@ header {
   width: 5em;
   filter: brightness(0);
 }
-
 .homerooms__framediv {
   display: flex;
   background: ghostwhite;
@@ -561,7 +492,6 @@ header {
   justify-content: center;
   padding: 0.5em;
 }
-
 .homerooms__slider__descriptions__item {
   width: 34.5em;
   position: relative;
@@ -571,7 +501,6 @@ header {
   padding: 1em 4em 1em 4em;
   display: inline-block;
 }
-
 .homerooms__slider__descriptions__item__title {
   font-family: Old Standard TT;
   font-size: 2.8em;
@@ -579,7 +508,6 @@ header {
   letter-spacing: -0.05em;
   text-align: center;
 }
-
 .homerooms__slider__descriptions__item__par {
   color: #777777;
   font-family: Archivo;
@@ -589,7 +517,6 @@ header {
   text-align: center;
   padding: 1em 4em 1em 4em;
 }
-
 .homerooms__slider__descriptions__item__price {
   font-size: 2em;
   font-family: Archivo;
@@ -598,7 +525,6 @@ header {
   color: #BEAD8E;
   display: block;
 }
-
 .homerooms-backArrow {
   bottom: 12em;
   width: 3em;
@@ -606,7 +532,6 @@ header {
   z-index: 20;
   right: 15em;
 }
-
 .homerooms-forwardArrow {
   bottom: 12em;
   width: 3em;
@@ -626,36 +551,29 @@ header {
     width: 100%;
     height: 35em;
   }
-
   .homerooms-backArrow {
     right: 30em;
     bottom: 25em;
   }
-
   .homerooms-forwardArrow {
     left: 30em;
     bottom: 25em;
   }
-
   .homerooms__slider__descriptions {
     display: inline-block;
   }
-
   .homerooms__slider__descriptions__item {
     width: 50em;
     bottom: 3em;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
 }
-
 .intro {
   background-color: black;
   padding: 2.5em;
   min-height: 70em;
 }
-
 .intro__container1__title {
   color: #BDAC8D;
   font-family: Archivo;
@@ -664,7 +582,6 @@ header {
   line-height: 1.8em;
   letter-spacing: 0.1em;
 }
-
 .intro__container1__subtitle {
   font-family: Old Standard TT;
   font-size: 5em;
@@ -675,7 +592,6 @@ header {
   color: white;
   margin: 0.5em 1em 0.5em 0em;
 }
-
 .intro__container1__par {
   font-family: Archivo;
   font-size: 1.2em;
@@ -684,7 +600,6 @@ header {
   line-height: 1.5em;
   color: #C2C2C2;
 }
-
 .intro__container1__btn {
   background: #BEAD8E;
   color: white;
@@ -699,7 +614,6 @@ header {
   margin: 25em 0em 5em 0em;
   position: absolute;
 }
-
 .intro__container2__video {
   border: none;
   width: 32em;
@@ -715,37 +629,30 @@ header {
     min-height: auto;
     background: linear-gradient(to right, black 0%, black 65%, #AD9D82 65%, #AD9D82 100%);
   }
-
   .intro__container1 {
     padding: 5em 2em 0em 2em;
     max-width: 45em;
   }
-
   .intro__container1__par {
     max-width: 34em;
   }
-
   .intro__container1__btn {
     position: relative;
     margin-top: 3em;
   }
-
   .intro__container2 {
     padding: 5em 2em 0em 2em;
   }
-
   .intro__container2__video {
     width: 40em;
     height: 30em;
   }
 }
-
 .facilities {
   padding-top: 5em;
   padding-bottom: 5em;
   margin-bottom: 5em;
 }
-
 .facilities__title {
   text-align: center;
   color: #777777;
@@ -755,7 +662,6 @@ header {
   line-height: 1.8em;
   letter-spacing: 0.1em;
 }
-
 .facilities__subtitle {
   font-family: Old Standard TT;
   font-size: 5.5em;
@@ -764,11 +670,9 @@ header {
   letter-spacing: -0.05em;
   text-align: center;
 }
-
 .facilities__slider {
   max-width: 40em;
 }
-
 .facilities__slider__container__item {
   margin-top: 3em;
   padding: 8em 10em 5em 5em;
@@ -777,11 +681,9 @@ header {
   background-position-x: 20em;
   background-position-y: top;
 }
-
 .facilities__slider__container__item__img {
   margin-bottom: 2em;
 }
-
 .facilities__slider__container__item__title {
   font-family: Old Standard TT;
   font-size: 3em;
@@ -790,7 +692,6 @@ header {
   letter-spacing: -0.05em;
   text-align: left;
 }
-
 .facilities__slider__container__item__par {
   font-family: Archivo;
   font-size: 1.2em;
@@ -814,24 +715,20 @@ header {
     max-width: 120em;
     text-align: center;
   }
-
   .facilities__slider__container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   }
-
   .facilities__slider__container__item {
     display: block;
     max-width: 37em;
     margin-right: 3em;
   }
-
   .facilities__slider__dotsLine {
     display: none;
   }
 }
-
 .menu {
   padding-top: 10em;
   background-repeat: no-repeat;
@@ -841,7 +738,6 @@ header {
   justify-content: center;
   display: grid;
 }
-
 .menu__title {
   color: #777777;
   font-family: Archivo;
@@ -851,7 +747,6 @@ header {
   letter-spacing: 0.1em;
   margin-left: 1em;
 }
-
 .menu__subtitle {
   font-family: Old Standard TT;
   font-size: 5.5em;
@@ -861,29 +756,24 @@ header {
   margin-left: 0.3em;
   margin-bottom: 0.5em;
 }
-
 .menu__sliderMenu {
   width: 35em;
   height: 40em;
 }
-
 .menu__sliderMenu-slide-item {
   display: flex;
   margin: 1em 0em 2em 2em;
   background: 0;
 }
-
 .menu__sliderMenu-slide-item img {
   width: 10em;
   height: 10em;
   vertical-align: bottom;
 }
-
 .menu__sliderMenu-slide-item__text {
   margin-left: 3em;
   padding-top: 1em;
 }
-
 .menu__sliderMenu-slide-item__text h4 {
   font-family: Old Standard TT;
   font-size: 2em;
@@ -893,7 +783,6 @@ header {
   text-align: left;
   margin-bottom: 0.5em;
 }
-
 .menu__sliderMenu-slide-item__text p {
   font-family: Roboto;
   font-size: 1em;
@@ -902,7 +791,6 @@ header {
   text-align: left;
   width: 13em;
 }
-
 .menu__sliderMenu-slide-item:hover {
   background-color: black;
   color: white;
@@ -911,26 +799,21 @@ header {
   background-position-y: center;
   background-position-x: 95%;
 }
-
 .menu__sliderMenu__backArrow {
   bottom: 0em;
   left: 25em;
 }
-
 .menu__sliderMenu__forwardArrow {
   bottom: 0em;
   left: 26em;
 }
-
 .menu__sliderPics {
   margin: 8em 1em 8em 1em;
 }
-
 .menu__sliderPics__container {
   max-width: 30em;
   margin-bottom: 5em;
 }
-
 .menu__sliderPics__container__item__img {
   width: 35em;
   height: 35em;
@@ -953,23 +836,6 @@ header {
   display: inline-block;
 }
 
-#backArrowRelated {
-  cursor: pointer;
-  position: relative;
-  background-color: #ebebeb;
-  padding: 1em;
-  display: inline-block;
-}
-
-#forwardArrowRelated {
-  cursor: pointer;
-  position: relative;
-  background-color: #BDAC8D;
-  padding: 1em;
-  color: white;
-  display: inline-block;
-}
-
 @media (width > 1000px) {
   .menu {
     background-position-x: 15em;
@@ -977,65 +843,46 @@ header {
     padding-top: 20em;
     background-size: unset;
   }
-
   .menu__sliderMenu {
     width: 100em;
   }
-
   .menu__sliderMenu-slide-item img {
     width: 10em;
     height: 10em;
   }
-
   .menu__sliderMenu-slide-item__text p {
     font-size: 1.3em;
     width: 21em;
   }
-
   .menu__sliderMenu-slide-item__text h4 {
     font-size: 2.5em;
   }
-
   .menu__sliderMenu__backArrow {
     height: 4em;
     width: 4em;
     padding: 1.3em 0em 0em 1.5em;
     left: 80em;
   }
-
   .menu__sliderMenu__forwardArrow {
     height: 4em;
     width: 4em;
     padding: 1.3em 0em 0em 1.5em;
     left: 82em;
   }
-
-  #backArrowRelated {
-
-    display: none;
-  }
-
-  #forwardArrowRelated {
-    display: none;
-  }
-
   .menu__sliderPics__container {
     display: flex;
     justify-content: center;
     max-width: 95em;
   }
-
   .menu__sliderPics__container__item {
     display: block;
     margin: 0em 1em 0em 1em;
   }
-
   .menu__sliderPics__container__item__img {
     width: 30em;
     height: 30em;
   }
 }
-
 .stats {
   background-color: #222222;
   padding: 2em 2em 5em 2em;
@@ -1043,18 +890,15 @@ header {
   display: grid;
   justify-content: center;
 }
-
 .stats__item {
   text-align: center;
 }
-
 .stats__item__img {
   max-width: 5em;
   margin-top: 5em;
   margin-bottom: 2em;
   position: relative;
 }
-
 .stats__item__num {
   font-family: Roboto;
   font-size: 4em;
@@ -1063,7 +907,6 @@ header {
   text-align: center;
   color: white;
 }
-
 .stats__item__par {
   font-family: Roboto;
   font-size: 1em;
@@ -1081,22 +924,18 @@ header {
     margin-left: 25%;
   }
 }
-
 .footerContainer {
   background-image: url("./assets/footer/footerBack.jpg");
 }
-
 .footerContainer__main__intro {
   padding: 1em 2em 1em 2em;
 }
-
 .footerContainer__main__intro__container {
   display: flex;
   justify-content: space-between;
   width: 30em;
   margin: 0em 0em 4em 0em;
 }
-
 .footerContainer__main__intro__container__logo {
   background-color: #BEAD8E;
   min-width: 2.5em;
@@ -1108,20 +947,17 @@ header {
   font-weight: 700;
   margin-right: 1em;
 }
-
 .footerContainer__main__intro__container__title1 {
   font-family: Archivo;
   font-size: 1em;
   margin: 0em 4em 0em 0em;
   letter-spacing: 0.1em;
 }
-
 .footerContainer__main__intro__container__title2 {
   font-family: Archivo;
   font-size: 2em;
   letter-spacing: 0.1em;
 }
-
 .footerContainer__main__intro__par {
   font-family: Archivo;
   font-size: 1.5em;
@@ -1131,23 +967,19 @@ header {
   color: #777777;
   margin-bottom: 2em;
 }
-
 .footerContainer__main__intro__socials__img {
   width: 3em;
   background-color: #f1f1f1;
   padding: 0.6em;
   margin-right: 0.5em;
 }
-
 .footerContainer__main__intro__socials__img:hover {
   background-color: #e4ca9a;
   transition: all 0.5s ease;
 }
-
 .footerContainer__main__services {
   padding: 1em 2em 1em 2em;
 }
-
 .footerContainer__main__services__title {
   font-family: Old Standard TT;
   font-size: 2em;
@@ -1155,34 +987,28 @@ header {
   text-align: left;
   margin: 1em 0em 1em 0em;
 }
-
 .footerContainer__main__services__listContainer {
   display: flex;
   justify-content: space-between;
   width: 25em;
   margin-left: 1.5em;
 }
-
 .footerContainer__main__services__listContainer__list {
   color: #777777;
   font-family: Roboto;
 }
-
 .footerContainer__main__services__listContainer__list li::marker {
   content: "+ ";
   font-size: 1em;
 }
-
 .footerContainer__main__services__listContainer__list li {
   font-size: 1.2em;
   font-weight: 400;
   line-height: 3em;
 }
-
 .footerContainer__main__contact {
   padding: 1em 2em 1em 2em;
 }
-
 .footerContainer__main__contact__title {
   font-family: Old Standard TT;
   font-size: 2em;
@@ -1190,16 +1016,13 @@ header {
   text-align: left;
   margin: 1em 0em 1em 0em;
 }
-
 .footerContainer__main__contact__item {
   display: flex;
   margin-bottom: 4em;
 }
-
 .footerContainer__main__contact__item__description {
   margin-left: 2em;
 }
-
 .footerContainer__main__contact__item__description__title {
   font-family: Old Standard TT;
   font-size: 1.5em;
@@ -1207,7 +1030,6 @@ header {
   text-align: left;
   margin-bottom: 0.3em;
 }
-
 .footerContainer__main__contact__item__description__par {
   font-family: Roboto;
   font-size: 1em;
@@ -1216,12 +1038,10 @@ header {
   letter-spacing: 0.05em;
   color: #777777;
 }
-
 .footerContainer__termsContainer {
   background-color: #F8F8F8;
   padding: 1em 2em 1em 2em;
 }
-
 .footerContainer__termsContainer__rights {
   font-family: Roboto;
   font-size: 1.3em;
@@ -1230,7 +1050,6 @@ header {
   letter-spacing: -0.04em;
   text-align: left;
 }
-
 .footerContainer__termsContainer__terms {
   font-family: Roboto;
   font-size: 1.3em;
@@ -1245,37 +1064,30 @@ header {
     display: flex;
     justify-content: center;
   }
-
   .footerContainer__main__intro {
     max-width: 29em;
   }
-
   .footerContainer__main__services__title {
     margin-left: 3.5em;
   }
-
   .footerContainer__main__services__listContainer {
     width: 35em;
     margin: 0em 1em 0em 8em;
   }
-
   .footerContainer__main__services__listContainer__list li {
     margin-right: 5em;
   }
-
   .footerContainer__termsContainer {
     display: flex;
     justify-content: space-around;
     padding: 1em 12em 1em 12em;
   }
 }
-
 .bannerGeneric {
   background-color: #333333;
   color: white;
   padding: 15em 1.5em 8em 1.5em;
 }
-
 .bannerGeneric__title {
   font-family: Archivo;
   font-size: 1.2em;
@@ -1285,7 +1097,6 @@ header {
   text-align: left;
   max-width: 15em;
 }
-
 .bannerGeneric__subtitle {
   font-family: Old Standard TT;
   font-size: 5.6em;
@@ -1295,7 +1106,6 @@ header {
   margin-top: 0.8em;
   margin-bottom: 0.8em;
 }
-
 .bannerGeneric__nav {
   background-color: white;
   max-width: 15em;
@@ -1308,7 +1118,6 @@ header {
   justify-content: space-around;
   padding: 1em 0.5em 1em 0.5em;
 }
-
 .bannerGeneric__nav a {
   list-style-type: none;
   text-decoration: none;
@@ -1317,7 +1126,6 @@ header {
   font-weight: 700;
   letter-spacing: -0.04em;
 }
-
 .bannerGeneric__nav p {
   color: black;
   font-size: 1.5em;
@@ -1337,33 +1145,27 @@ header {
     padding: 15em 1.5em 8em 28.5em;
     height: 40em;
   }
-
   .bannerGeneric__title {
     max-width: 25em;
   }
-
   .bannerGeneric__subtitle {
     font-size: 7.6em;
     max-width: 7em;
     margin-top: 0.3em;
   }
-
   .bannerGeneric__nav {
     left: 65%;
     top: 3em;
   }
 }
-
 .aboutintro {
   display: grid;
   justify-items: center;
 }
-
 .aboutintro__video {
   margin: 5em 0em 3em 0em;
   min-height: 20em;
 }
-
 .aboutintro__par {
   font-family: Old Standard TT;
   font-size: 3em;
@@ -1372,7 +1174,6 @@ header {
   text-align: center;
   margin: 0em 1em 1em 1em;
 }
-
 .aboutintro__featuresContainer {
   display: flex;
   flex-wrap: wrap;
@@ -1380,7 +1181,6 @@ header {
   justify-content: space-around;
   margin: 5em 0em 5em 0em;
 }
-
 .aboutintro__featuresContainer__item {
   width: 15em;
   height: 15em;
@@ -1390,7 +1190,6 @@ header {
   justify-content: center;
   justify-items: center;
 }
-
 .aboutintro__featuresContainer__item p {
   font-family: Archivo;
   font-size: 1.2em;
@@ -1414,37 +1213,30 @@ header {
     height: 50em;
     margin-top: 15em;
   }
-
   .aboutintro__par {
     max-width: 14em;
     font-size: 5em;
   }
-
   .aboutintro__featuresContainer {
     width: 50%;
     max-width: 50%;
   }
-
   .aboutintro__featuresContainer #bbq {
     display: grid;
   }
 }
-
 .restaurant {
   display: grid;
   justify-items: center;
 }
-
 .restaurant__img {
   width: 30em;
   height: 25em;
   margin: 2em 0em 3.5em 0em;
 }
-
 .restaurant__container {
   padding: 0em 3em 0em 3em;
 }
-
 .restaurant__container__title {
   color: #777777;
   font-family: Archivo;
@@ -1453,7 +1245,6 @@ header {
   line-height: 1.8em;
   letter-spacing: 0.1em;
 }
-
 .restaurant__container__subtitle {
   font-family: Old Standard TT;
   font-size: 4em;
@@ -1463,7 +1254,6 @@ header {
   margin-bottom: 0.5em;
   max-width: 10em;
 }
-
 .restaurant__container__par {
   color: #777777;
   font-family: Archivo;
@@ -1473,7 +1263,6 @@ header {
   text-align: left;
   max-width: 21em;
 }
-
 .restaurant__container__btn {
   background: #BEAD8E;
   color: white;
@@ -1496,29 +1285,23 @@ header {
     margin-bottom: 10em;
     padding-left: 15em;
   }
-
   .restaurant__img {
     width: 50em;
     height: 20%;
   }
-
   .restaurant__container {
     margin-left: 5em;
   }
-
   .restaurant__container__subtitle {
     max-width: 11em;
   }
-
   .restaurant__container__par {
     max-width: 34em;
   }
 }
-
 .counter {
   padding: 0em 5em 0em 3em;
 }
-
 .counter__title {
   color: #777777;
   font-family: Archivo;
@@ -1527,7 +1310,6 @@ header {
   line-height: 1.8em;
   letter-spacing: 0.1em;
 }
-
 .counter__subtitle {
   font-family: Old Standard TT;
   font-size: 4em;
@@ -1537,21 +1319,18 @@ header {
   margin-bottom: 1.5em;
   max-width: 5em;
 }
-
 .counter__facts__item {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 5em;
 }
-
 .counter__facts__item__description__num {
   font-family: Old Standard TT;
   font-size: 4em;
   font-weight: 400;
   line-height: 1em;
 }
-
 .counter__facts__item__description__par {
   font-family: Roboto;
   font-weight: 400;
@@ -1559,7 +1338,6 @@ header {
   letter-spacing: -0.018em;
   color: #777777;
 }
-
 .counter #counterImg {
   width: 100%;
   height: 20em;
@@ -1572,32 +1350,26 @@ header {
     justify-content: center;
     margin-bottom: 5em;
   }
-
   .counter #counterImg {
     width: 45em;
     height: 35em;
   }
-
   .counter__subtitle {
     font-size: 5.5em;
     max-width: 10em;
   }
-
   .counter__facts {
     display: flex;
     justify-content: space-between;
   }
-
   .counter__facts__item__description {
     margin: 0em 5em 0em 5em;
   }
-
   .counter__slide {
     width: 95em;
   }
 }
-
-.swiper-pagination>.swiper-pagination-bullet {
+.swiper-pagination > .swiper-pagination-bullet {
   opacity: 0.2;
   border: white solid 1px;
   background-color: gray;
@@ -1605,7 +1377,7 @@ header {
   width: 1.5em;
 }
 
-.swiper-pagination>.swiper-pagination-bullet-active {
+.swiper-pagination > .swiper-pagination-bullet-active {
   background-color: #BEAD8E;
   opacity: 1;
   height: 1.5em;
@@ -1623,19 +1395,16 @@ header {
 .offermain {
   padding-top: 5em;
 }
-
 .offermain__item {
   padding: 0em 2em 10em 2em;
 }
-
 .offermain__item img {
   max-width: 33.5em;
 }
-
 .offermain__item__container1 {
   display: flex;
+  justify-content: space-between;
 }
-
 .offermain__item__container1__titles :nth-child(1) {
   color: #777777;
   font-family: Archivo;
@@ -1646,7 +1415,6 @@ header {
   margin-left: 1em;
   margin-bottom: 1em;
 }
-
 .offermain__item__container1__titles :nth-child(2) {
   font-family: Old Standard TT;
   font-size: 3em;
@@ -1658,16 +1426,12 @@ header {
   text-decoration: none;
   color: black;
   display: block;
-  width: 7em;
 }
-
 .offermain__item__container1__prices {
   position: relative;
   bottom: 5em;
   margin-right: 2em;
-  /* left: 3em; */
 }
-
 .offermain__item__container1__prices :nth-child(1) {
   color: #BEAD8E;
   font-family: Archivo;
@@ -1676,18 +1440,15 @@ header {
   text-align: right;
   text-decoration: line-through;
 }
-
 .offermain__item__container1__prices :nth-child(2) {
   color: #DE5777;
   font-family: Archivo;
   font-size: 2em;
   font-weight: 700;
 }
-
 .offermain__item__container2__description {
   max-height: 22em;
 }
-
 .offermain__item__container2__description p {
   font-family: Roboto;
   font-size: 1.2em;
@@ -1698,7 +1459,6 @@ header {
   color: #777777;
   margin-left: 1.3em;
 }
-
 .offermain__item__container2__description a.button {
   position: relative;
   top: 35em;
@@ -1716,19 +1476,16 @@ header {
   padding: 1.5em 0em 0em 7em;
   text-decoration: none;
 }
-
 .offermain__item__container2__list {
   display: flex;
   justify-content: space-between;
   max-width: 25em;
   margin-left: 1.5em;
 }
-
 .offermain__item__container2__list ul {
   list-style-type: none;
   min-height: 30em;
 }
-
 .offermain__item__container2__list li {
   font-family: Roboto;
   font-size: 1.2em;
@@ -1736,7 +1493,6 @@ header {
   color: #777777;
   margin-bottom: 1em;
 }
-
 .offermain__item__container2__list img {
   max-width: 1.3em;
   margin-right: 0.5em;
@@ -1747,11 +1503,9 @@ header {
     display: grid;
     justify-content: center;
   }
-
   .offermain__item {
     width: 95em !important;
   }
-
   .offermain__item-card {
     background-color: white;
     border-top: 10px solid #BDAC8D;
@@ -1760,12 +1514,10 @@ header {
     bottom: 10em;
     margin: 0em 5em 0em 5em;
   }
-
   .offermain__item a img {
     width: 100%;
     max-width: unset;
   }
-
   .offermain__item__container1 {
     display: flex;
     align-items: center;
@@ -1774,52 +1526,40 @@ header {
     border-bottom: 2px solid rgba(119, 119, 119, 0.1607843137);
     margin: 0em 4em 4em 4em;
   }
-
   .offermain__item__container1__prices {
     position: unset;
   }
-
   .offermain__item__container2 {
     display: flex;
-    align-items: center;
     justify-content: space-around;
   }
-
   .offermain__item__container2__description p {
     max-width: 32em;
   }
-
   .offermain__item__container2__description a.button {
     top: 3em;
   }
-
   .offermain__item__container2__list {
     max-width: 35em;
   }
-
   .offermain__item__container2__list ul {
     margin-right: 5em;
-    min-height: 0;
   }
 }
-
 @media (width > 400px) {
   .offermain {
     display: grid;
     justify-content: center;
   }
-
   .offermain__item {
     width: 38em;
   }
 }
-
 .popularList {
   text-align: center;
   background-color: black;
   padding: 5em 2em 5em 2em;
 }
-
 .popularList__title {
   font-family: Archivo;
   font-size: 1.4em;
@@ -1827,7 +1567,6 @@ header {
   letter-spacing: 0.2em;
   color: #BDAC8D;
 }
-
 .popularList__subtitle {
   font-family: Old Standard TT;
   font-size: 4em;
@@ -1836,22 +1575,17 @@ header {
   color: white;
   margin-bottom: 1em;
 }
-
 .popularList__slider {
   text-align: center;
   background-color: white;
 }
-
 .popularList__slider__wrapper {
   background-color: black;
 }
-
 .popularList__slider__wrapper__slide {
   width: 10em;
   background-color: white;
-  min-height: 50em;
 }
-
 .popularList__slider__wrapper__slide__title {
   font-family: Old Standard TT;
   font-size: 2.8em;
@@ -1859,7 +1593,6 @@ header {
   letter-spacing: -0.05em;
   text-align: center;
 }
-
 .popularList__slider__wrapper__slide__par {
   color: #777777;
   font-family: Archivo;
@@ -1869,7 +1602,6 @@ header {
   text-align: center;
   padding: 1em 6em 1em 6em;
 }
-
 .popularList__slider__wrapper__slide__price {
   font-size: 2em;
   font-family: Archivo;
@@ -1878,7 +1610,6 @@ header {
   display: inline-block;
   margin: 0em 1em 1em 0em;
 }
-
 .popularList__slider__wrapper__slide__complements {
   width: 25em;
   height: 5em;
@@ -1886,7 +1617,6 @@ header {
   position: relative;
   bottom: 2em;
 }
-
 .popularList__slider__wrapper__slide a {
   font-family: Archivo;
   font-size: 16px;
@@ -1897,7 +1627,6 @@ header {
   color: #BDBDBD;
   text-decoration: none;
 }
-
 .popularList__slider__backArrow {
   cursor: pointer;
   position: absolute;
@@ -1909,7 +1638,6 @@ header {
   min-width: 2.5em;
   color: black;
 }
-
 .popularList__slider__forwardArrow {
   cursor: pointer;
   position: relative;
@@ -1928,13 +1656,11 @@ header {
     max-width: 120em;
     margin-bottom: 10em;
   }
-
   .popularList__subtitle {
     font-size: 8em;
     margin-top: 1em;
   }
 }
-
 .roomsGrid__slider {
   width: 100% !important;
   height: 190em;
@@ -1979,56 +1705,57 @@ header {
   filter: brightness(0);
 }
 
+#amenities_frame {
+  display: flex;
+  background: ghostwhite;
+  height: 3em;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  padding: 0.5em;
+  bottom: 2em;
+}
+
 @media (width > 1000px) {
   .roomsGrid__slider {
     width: 65% !important;
     height: 170em;
   }
-
   .roomsGrid__slider img {
     width: 35em;
   }
-
   .roomsGrid__slider .swiper-slide {
     height: 45em !important;
   }
 }
-
 .contactIntro {
   display: grid;
   justify-content: center;
 }
-
 .contactIntro__information {
   margin: 5em;
 }
-
 .contactIntro__information div {
   background-repeat: no-repeat;
   background-position: right;
   height: 10em;
   margin-bottom: 8em;
 }
-
 .contactIntro__information div:nth-of-type(3) {
   margin-bottom: 0em;
 }
-
 .contactIntro__information img {
   max-height: 4em;
 }
-
 .contactIntro__information p {
   margin-top: 2em;
 }
-
 .contactIntro__google-map {
   padding-bottom: 50%;
   position: relative;
   width: 34em;
   margin: 2em 2em 2em 2em;
 }
-
 .contactIntro__google-map iframe {
   height: 100%;
   width: 100%;
@@ -2042,20 +1769,17 @@ header {
   padding: 3em;
   margin: 5em auto;
 }
-
 .contactForm__form ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-
 .contactForm__form ul li {
   display: block;
   margin-bottom: 1em;
   min-height: 3em;
   text-align: center;
 }
-
 .contactForm__form ul li .field-style {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2064,14 +1788,12 @@ header {
   border: none;
   background-color: #F8F8F8;
 }
-
 .contactForm__form ul li .field-full {
   width: 100%;
   min-height: 5em;
   font-size: 1.3em;
   font-family: Roboto;
 }
-
 .contactForm__form ul li textarea {
   width: 100%;
   height: 15em;
@@ -2098,46 +1820,37 @@ header {
     display: flex;
     justify-content: space-around;
   }
-
   .contactIntro__information div {
     margin-bottom: 0em;
     margin-top: 2em;
     width: 25em;
   }
-
   .contactIntro__information img {
     margin-top: 2em;
   }
-
   .contactIntro__google-map {
     padding-bottom: 50%;
     position: relative;
     width: 100em;
     margin-top: 0em;
   }
-
   .contactForm__form {
     max-width: 85em;
   }
-
   .contactForm__form__inputContainer {
     display: flex;
   }
-
   .contactForm__form ul li .field-full {
     width: 30em;
     margin-right: 1em;
   }
-
   .contactBtn {
     margin-top: 2em;
   }
 }
-
 .details {
   margin: 5em 2em 2em 2em;
 }
-
 .details p {
   font-family: Roboto;
   font-size: 1.3em;
@@ -2145,7 +1858,6 @@ header {
   line-height: 2em;
   color: #777777;
 }
-
 .details-container__item__text h1 {
   color: #777777;
   font-family: Archivo;
@@ -2155,7 +1867,6 @@ header {
   letter-spacing: 0.1em;
   margin-bottom: 1em;
 }
-
 .details-container__item__text h4 {
   font-family: Old Standard TT;
   font-size: 3em;
@@ -2164,7 +1875,6 @@ header {
   text-align: left;
   margin-bottom: 0.5em;
 }
-
 .details-container__item__text p {
   color: #BEAD8E;
   font-family: Archivo;
@@ -2172,19 +1882,15 @@ header {
   font-weight: 700;
   margin-bottom: 0.5em;
 }
-
 .details-container__image {
   width: 33.5em;
 }
-
 .details-container__image img {
   width: 100%;
 }
-
 .details-container__form {
   text-align: center;
 }
-
 .details-container__form h2 {
   font-family: Archivo;
   font-size: 1.5em;
@@ -2193,11 +1899,9 @@ header {
   letter-spacing: -0.05em;
   margin: 2em;
 }
-
 .details-container__form li {
   list-style-type: none;
 }
-
 .details-container__form li label {
   display: block;
   margin: 1em 0em 1em 1.5em;
@@ -2207,7 +1911,6 @@ header {
   font-weight: 700;
   line-height: 15px;
 }
-
 .details-container__form li input {
   border: none;
   background-color: #f0eeee;
@@ -2216,7 +1919,6 @@ header {
   padding: 1em;
   color: #777777;
 }
-
 .details-container__form li textarea {
   border: none;
   background-color: #f0eeee;
@@ -2224,7 +1926,6 @@ header {
   width: 30em;
   padding: 1em;
 }
-
 .details-container__form li .checkBtn {
   background-color: #BEAD8E;
   color: white;
@@ -2242,59 +1943,45 @@ header {
   .details {
     display: block !important;
   }
-
   .details-container {
     display: flex;
-    align-items: center;
     justify-content: center;
     padding: 5em;
   }
-
   .details-container__item {
     max-width: 100em;
+    height: 75em;
+    margin-left: 5em;
   }
-
   .details-container__item__text {
     width: 85%;
     background-color: white;
     translate: 0em 8em;
     padding: 0em 5em 1em 5em;
   }
-
   .details-container__image {
-    width: 90%;
+    width: 750px;
   }
-
-  .details-container__image img {
-    width: 100%;
-    height: 62em;
-  }
-
   #introPar {
-    /* width: 50em; */
     margin-left: 25%;
     display: flex;
     bottom: 5em;
     position: relative;
   }
-
   #titleDiv {
     display: flex;
     justify-content: space-between;
   }
 }
-
 @media (width > 600px) {
   .details {
     display: grid;
     justify-items: center;
   }
 }
-
 .amenities {
   margin: 5em 2em 10em 2em;
 }
-
 .amenities h4 {
   font-family: Old Standard TT;
   font-size: 3em;
@@ -2304,18 +1991,15 @@ header {
   border-bottom: 1px solid rgba(119, 119, 119, 0.231372549);
   margin-bottom: 1em;
 }
-
 .amenities-list {
   display: flex;
   justify-content: space-between;
   max-width: 25em;
   margin-left: 1.5em;
 }
-
 .amenities-list ul {
   list-style-type: none;
 }
-
 .amenities-list li {
   font-family: Roboto;
   font-size: 1.2em;
@@ -2323,18 +2007,15 @@ header {
   color: #777777;
   margin-bottom: 1em;
 }
-
 .amenities-list img {
   max-width: 1.3em;
   margin-right: 0.5em;
 }
-
 .amenities-profile {
   max-width: 35em;
   text-align: center;
   padding: 5em;
 }
-
 .amenities-profile__checkmark {
   background-color: #BDAC8D;
   width: 4em;
@@ -2348,13 +2029,11 @@ header {
   left: 15em;
   top: 5em;
 }
-
 .amenities-profile h4 {
   border: none;
   text-align: center;
   margin-bottom: 0em;
 }
-
 .amenities-profile h2 {
   font-family: Archivo;
   font-size: 1.4em;
@@ -2364,7 +2043,6 @@ header {
   color: #BDAC8D;
   margin-bottom: 1em;
 }
-
 .amenities-profile p {
   font-family: Archivo;
   font-size: 1.6em;
@@ -2372,17 +2050,14 @@ header {
   line-height: 1.5em;
   color: #777777;
 }
-
 .amenities-profile img {
   width: 15em;
   border-radius: 10em;
   height: 15em;
 }
-
 .amenities-cancellation {
   margin-top: 5em;
 }
-
 .amenities-cancellation p {
   font-family: Roboto;
   font-size: 1.4em;
@@ -2392,52 +2067,35 @@ header {
   color: #777777;
 }
 
-#amenities_frame{
-  display: flex;
-  background: ghostwhite;
-  height: 3em;
-  justify-content: center;
-  padding: 0.5em;
-  bottom: 3em;
-  position: relative;
-}
-
 @media (width > 1000px) {
   .amenities {
     padding: 0em 30em 0em 30em;
     display: block !important;
   }
-
   .amenities-profile {
     margin-top: 5em;
     padding: 5em 5em 10em 5em;
     box-shadow: 3px 3px 10px 3px rgba(190, 173, 142, 0.2705882353);
   }
-
   .amenities-profile__checkmark {
     left: 16em;
   }
-
   .amenities-cancellation {
     width: 57em;
   }
-
   .amenities-list {
     max-width: 35em;
   }
 }
-
 @media (width > 600px) {
   .amenities {
     display: grid;
     justify-items: center;
   }
 }
-
 .relatedRooms {
   margin: 5em 2em 2em 2em;
 }
-
 .relatedRooms h4 {
   font-family: Old Standard TT;
   font-size: 3em;
@@ -2447,15 +2105,12 @@ header {
   border-bottom: 1px solid rgba(119, 119, 119, 0.231372549);
   margin-bottom: 1em;
 }
-
 .relatedRooms-slider {
   text-align: center;
 }
-
 .relatedRooms-slider__slide {
   width: 10em;
 }
-
 .relatedRooms-slider__slide__title {
   font-family: Old Standard TT;
   font-size: 2.8em;
@@ -2463,7 +2118,6 @@ header {
   letter-spacing: -0.05em;
   text-align: center;
 }
-
 .relatedRooms-slider__slide__par {
   color: #777777;
   font-family: Archivo;
@@ -2473,7 +2127,6 @@ header {
   text-align: center;
   padding: 1em 6em 1em 6em;
 }
-
 .relatedRooms-slider__slide__price {
   font-size: 2em;
   font-family: Archivo;
@@ -2482,7 +2135,6 @@ header {
   display: inline-block;
   margin: 0em 1em 1em 0em;
 }
-
 .relatedRooms-slider__slide__complements {
   width: 25em;
   height: 5em;
@@ -2490,7 +2142,6 @@ header {
   position: relative;
   bottom: 2em;
 }
-
 .relatedRooms-slider__slide a {
   font-family: Archivo;
   font-size: 16px;
@@ -2501,24 +2152,46 @@ header {
   color: #BDBDBD;
   text-decoration: none;
 }
-
 .relatedRooms-slider__forwardArrow {
   z-index: 10;
   bottom: 30em;
   left: 14em;
 }
-
 .relatedRooms-slider__backArrow {
   z-index: 10;
   bottom: 30em;
   right: 14em;
 }
 
+#backArrowRelated {
+  cursor: pointer;
+  position: absolute;
+  background-color: white;
+  padding: 0.5em 0.5em 0.5em 0.3em;
+  bottom: 25em;
+  z-index: 100;
+  height: 2.5em;
+  min-width: 2.5em;
+  color: black;
+}
+
+#forwardArrowRelated {
+  cursor: pointer;
+  position: relative;
+  background-color: #BDAC8D;
+  padding: 0.5em 0.5em 0.5em 0.3em;
+  bottom: 25em;
+  z-index: 100;
+  height: 2.5em;
+  max-width: 2.5em;
+  color: white;
+  left: 31em;
+}
+
 @media (width > 1000px) {
   .relatedRooms {
     margin-left: 15%;
   }
-
   .relatedRooms-slider {
     width: 100%;
   }

@@ -73,6 +73,31 @@
     }
 }
 
+#backArrowRelated {
+    cursor: pointer;
+    position: absolute;
+    background-color: white;
+    padding: 0.5em 0.5em 0.5em 0.3em;
+    bottom: 25em;
+    z-index: 100;
+    height: 2.5em;
+    min-width: 2.5em;
+    color: black;
+}
+
+#forwardArrowRelated {
+    cursor: pointer;
+    position: relative;
+    background-color: #BDAC8D;
+    padding: 0.5em 0.5em 0.5em 0.3em;
+    bottom: 25em;
+    z-index: 100;
+    height: 2.5em;
+    max-width: 2.5em;
+    color: white;
+    left: 31em;
+}
+
 @media (width > 1000px) {
     .relatedRooms{
         margin-left: 15%;

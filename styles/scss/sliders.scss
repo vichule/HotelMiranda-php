@@ -1,9 +1,22 @@
-.swiper-pagination > .swiper-pagination-bullet {
+.swiper-pagination>.swiper-pagination-bullet {
     opacity: 0.2;
     border: white solid 1px;
     background-color: gray;
+    height: 1.5em;
+    width: 1.5em;
 }
-.swiper-pagination > .swiper-pagination-bullet-active {
+
+.swiper-pagination>.swiper-pagination-bullet-active {
     background-color: #BEAD8E;
     opacity: 1;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.swiper-wrapper {
+    height: unset !important;
+}
+
+#rooms_wrapper {
+    height: 100% !important;
 }

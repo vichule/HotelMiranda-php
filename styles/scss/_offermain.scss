@@ -1,19 +1,21 @@
-.offermain{
+.offermain {
     padding-top: 5em;
-    
-    
-    &__item{
+
+
+    &__item {
         padding: 0em 2em 10em 2em;
 
-        img{
+        img {
             max-width: 33.5em;
         }
-        &__container1{
-            display: flex;
-            
-            &__titles{
 
-                :nth-child(1){
+        &__container1 {
+            display: flex;
+            justify-content: space-between;
+
+            &__titles {
+
+                :nth-child(1) {
                     color: #777777;
                     font-family: Archivo;
                     font-size: 1.1em;
@@ -23,7 +25,8 @@
                     margin-left: 1em;
                     margin-bottom: 1em;
                 }
-                :nth-child(2){
+
+                :nth-child(2) {
                     font-family: Old Standard TT;
                     font-size: 3em;
                     font-weight: 400;
@@ -36,12 +39,13 @@
                     display: block;
                 }
             }
-            &__prices{
+
+            &__prices {
                 position: relative;
                 bottom: 5em;
                 margin-right: 2em;
 
-                :nth-child(1){
+                :nth-child(1) {
                     color: #BEAD8E;
                     font-family: Archivo;
                     font-size: 1.5em;
@@ -49,7 +53,8 @@
                     text-align: right;
                     text-decoration: line-through;
                 }
-                :nth-child(2){
+
+                :nth-child(2) {
                     color: #DE5777;
                     font-family: Archivo;
                     font-size: 2em;
@@ -57,12 +62,13 @@
                 }
             }
         }
-        &__container2{
 
-            &__description{
+        &__container2 {
+
+            &__description {
                 max-height: 22em;
 
-                p{
+                p {
                     font-family: Roboto;
                     font-size: 1.2em;
                     font-weight: 400;
@@ -73,7 +79,7 @@
                     margin-left: 1.3em;
                 }
 
-                a.button{
+                a.button {
                     position: relative;
                     top: 35em;
                     background: #BEAD8E;
@@ -83,32 +89,35 @@
                     font-weight: 700;
                     letter-spacing: 0.1em;
                     width: 20em;
-                    height: 5em;
+                    height: 4em;
                     border: none;
                     margin-left: 1em;
                     display: inline-block;
-                    padding: 2em 0em 0em 7em;
+                    padding: 1.5em 0em 0em 7em;
                     text-decoration: none;
                 }
             }
-            &__list{    
+
+            &__list {
                 display: flex;
                 justify-content: space-between;
                 max-width: 25em;
                 margin-left: 1.5em;
-                
-                ul{
+
+                ul {
                     list-style-type: none;
                     min-height: 30em;
                 }
-                li{
+
+                li {
                     font-family: Roboto;
                     font-size: 1.2em;
                     font-weight: 500;
                     color: #777777;
                     margin-bottom: 1em;
                 }
-                img{
+
+                img {
                     max-width: 1.3em;
                     margin-right: 0.5em;
                 }
@@ -119,14 +128,14 @@
 
 @media (width > 1000px) {
 
-    .offermain{
+    .offermain {
         display: grid;
         justify-content: center;
 
-        &__item{
+        &__item {
             width: 95em !important;
-            
-            &-card{
+
+            &-card {
                 background-color: white;
                 border-top: 10px solid #BDAC8D;
                 z-index: 10;
@@ -134,41 +143,44 @@
                 bottom: 10em;
                 margin: 0em 5em 0em 5em;
             }
-            a img{
+
+            a img {
                 width: 100%;
                 max-width: unset;
             }
-            &__container1{
+
+            &__container1 {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 padding: 1em 0em 1em 0em;
                 border-bottom: 2px solid #77777729;
                 margin: 0em 4em 4em 4em;
-                
-                &__prices{
+
+                &__prices {
                     position: unset;
                 }
             }
-            &__container2{
+
+            &__container2 {
                 display: flex;
-                align-items: center;
                 justify-content: space-around;
 
-                &__description{
+                &__description {
 
-                    p{
+                    p {
                         max-width: 32em;
                     }
-                    a.button{
+
+                    a.button {
                         top: 3em;
                     }
                 }
 
-                &__list{
+                &__list {
                     max-width: 35em;
 
-                    ul{
+                    ul {
                         margin-right: 5em;
                     }
                 }
@@ -180,11 +192,11 @@
 
 @media (width > 400px) {
 
-    .offermain{
+    .offermain {
         display: grid;
         justify-content: center;
 
-        &__item{
+        &__item {
             width: 38em;
         }
     }
