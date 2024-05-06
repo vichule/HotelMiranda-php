@@ -13,7 +13,7 @@
 
     <section class="roomsGrid">
         <div class="swiper roomsGrid__slider">
-            <div class="swiper-wrapper " id="rooms_wrapper">
+            <div class="swiper-wrapper " >
                 @foreach ($rooms as $room)
                 <div class="swiper-slide popularList__slider__wrapper__slide">
                     <img src="{{ json_decode($room['photo_url'])[0] }}" alt="">
