@@ -45,7 +45,7 @@
     </section>
 
     <section class="contactForm">
-        <form class="contactForm__form">
+        <form class="contactForm__form" method="POST">
             <ul>
                 <div class="contactForm__form__inputContainer">
                     <li>
@@ -64,13 +64,14 @@
                             placeholder="Enter email address" />
                     </li>
                     <li>
-                        <input type="text" name="subject" class="field-style field-full" placeholder="Enter subject" />
+                        <input type="text" name="phone" class="field-style field-full"
+                            placeholder="Add phone number" />
                     </li>
                 </div>
                 <div class="contactForm__form__inputContainer">
+                    
                     <li>
-                        <input type="text" name="phone" class="field-style field-full"
-                            placeholder="Add phone number" />
+                        <input type="text" name="subject" class="field-style field-full" placeholder="Enter subject" />
                     </li>
                 </div>
                 <li>

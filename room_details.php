@@ -4,17 +4,13 @@ require_once( __DIR__ . '/utils/queries/rooms/getRoomQuery.php');
 require_once( __DIR__ . '/utils/queries/rooms/getRelatedRooms.php');
 require_once(__DIR__ . '/utils/getAmenities.php');
 require_once( __DIR__ . '/utils/queries/bookings/addBookingQuery.php');
+require_once(__DIR__.'/utils/forms/formControl.php');
 
-$checkin = $_GET['check_in'];
-$checkout = $_GET['check_out'];
-$firstname = $_GET['first_name'];
-$lastname = $_GET['lastname'];
-$email = $_GET['email'];
-$phone = $_GET['phone'];
-$message = $_GET['message'];
 
-$related = $conn->query($getRelated);
-$stmt = $conn->prepare($getRoom);
+// $roomId = $_POST['room_id'];
+
+$related = $conn->query($getRelatedRooms);
+$stmt = $conn->prepare($getOneRoom);
 $id = $_GET['id'];
 
 
@@ -26,9 +22,10 @@ $results = $stmt->get_result();
 $room = $results->fetch_assoc();
 
 
+
+bookingControl($conn, $id, $addBooking);
 $stmt->close();
 $conn->close();
-
 
 $variables = ['room' => $room, 'related' => $related];
 renderTemplate('room_details', $variables);

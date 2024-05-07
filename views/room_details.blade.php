@@ -27,17 +27,18 @@
             </div>
             <div class="details-container__item">
 
-                <form action="" class="details-container__form">
+                <form action="" class="details-container__form" method="POST">
                     <h2>Check Availability</h2>
+                    {{-- <input type="hidden" name="room_id" id="room_id" value="{{ $room['id'] }}"> --}}
                     <ul>
                         <li>
                             <label for="checkin" class="">Check In</label>
-                            <input type="date" id="check_in" name="check_in" value="2024-03-24" min="2024-03-01"
+                            <input type="date" id="check_in" name="check_in"  min="2024-03-01"
                                 max="2028-12-31" class="" />
                         </li>
                         <li>
                             <label for="checkout" class="">Check Out</label>
-                            <input type="date" id="check_out" name="check_out" value="2024-03-30" min="2024-03-25"
+                            <input type="date" id="check_out" name="check_out"  min="2024-03-25"
                                 max="2028-12-31" class="" />
                         </li>
                         <li>
