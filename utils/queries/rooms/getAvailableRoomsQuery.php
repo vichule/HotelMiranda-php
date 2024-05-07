@@ -1,6 +1,6 @@
 <?php
 
-$getAvailable = "SELECT 
+$getAvailableRooms = "SELECT 
 r.id AS room_id, r.room_type, r.room_number, r.description, r.price,
 r.offer, r.discount, r.cancellation, r.status,
 json_arrayagg(p.photo) AS photo_url,
