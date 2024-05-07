@@ -8,9 +8,9 @@ if (isset($_GET['arrival']) && isset($_GET['departure'])) {
     $arrival = $_GET['arrival'];
     $departure = $_GET['departure'];
 
-    $query = $getAvailable;
+    $query = $getAvailableRooms;
 } else {
-    $query = $getRooms;
+    $query = $getAllRooms;
 }
 
 $stmt = $conn->prepare($query);

@@ -4,7 +4,7 @@ require_once( __DIR__ . '/utils/queries/rooms/getRoomsQuery.php');
 require_once(__DIR__ . '/utils/getAmenities.php');
 
 
-$rooms = $conn->query($getRooms);
+$rooms = $conn->query($getAllRooms);
 
 
 

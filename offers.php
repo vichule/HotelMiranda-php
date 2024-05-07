@@ -5,8 +5,8 @@ require_once( __DIR__ . '/utils/queries/rooms/getPopularRoomsQuery.php');
 require_once(__DIR__ . '/utils/getAmenities.php');
 
 
-$rooms = $conn->query($getOffers);
-$popular = $conn->query($getPopular);
+$rooms = $conn->query($getOfferRooms);
+$popular = $conn->query($getPopularRooms);
 
 
 
