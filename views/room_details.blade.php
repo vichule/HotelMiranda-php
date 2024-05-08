@@ -62,7 +62,7 @@
                             <textarea name="message" id="message" cols="30" rows="10"></textarea>
                         </li>
                         <li>
-                            <input type="submit" value="CHECK AVAILABILITY" class="checkBtn" />
+                            <input type="submit" value="BOOK ROOM" class="checkBtn" />
                         </li>
                     </ul>
                 </form>
@@ -126,3 +126,5 @@
     </section>
 @endsection
 <script src="./js/swiper.js" type="module"></script>
+
+
