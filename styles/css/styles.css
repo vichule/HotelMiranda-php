@@ -1938,6 +1938,7 @@ header {
   width: 21.5em;
   margin-top: 2em;
   margin-bottom: 4em;
+  cursor: pointer;
 }
 
 @media (width > 1000px) {
