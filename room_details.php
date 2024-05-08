@@ -23,9 +23,9 @@ $room = $results->fetch_assoc();
 
 
 
-bookingControl($conn, $id, $addBooking);
-$stmt->close();
-$conn->close();
+
 
 $variables = ['room' => $room, 'related' => $related];
 renderTemplate('room_details', $variables);
+
+bookingControl($conn, $id, $addBooking);

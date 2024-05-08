@@ -28,15 +28,44 @@ function bookingControl($conn, $roomId, $query)
         $orderdate = date('Y-m-d');
         $status = "In progress";
 
+        //     if (!isRoomAvailable($conn, $roomId, $checkin, $checkout)) {
+        //         echo "Room not available in those dates.";
+        //         return;
+        //     }
+
+        //     $stmt = $conn->prepare($query);
+        //     $stmt->bind_param("sssssssii", $firstname, $lastname, $orderdate, $checkin, $checkout, $notes, $status, $discount, $roomId);
+        //     $stmt->execute();
+        //     echo "Booking done successfully.";
+        // }
+
         if (!isRoomAvailable($conn, $roomId, $checkin, $checkout)) {
-            echo "Room not available in those dates.";
-            return;
+            echo "<script defer>
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Room not available in those dates.',
+                    showConfirmButton: true,
+                    timer: 3500
+                })
+           </script>";
+            exit();
         }
 
         $stmt = $conn->prepare($query);
         $stmt->bind_param("sssssssii", $firstname, $lastname, $orderdate, $checkin, $checkout, $notes, $status, $discount, $roomId);
         $stmt->execute();
-        echo "Booking done successfully.";
+        $stmt->close();
+        $conn->close();
+        echo "<script defer>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Booking done successfully.',
+                    showConfirmButton: true,
+                    timer: 3500
+                })
+           </script>";
+        
+        die("<script>location.href = 'index.php'</script>");
     }
 }
 
@@ -60,5 +89,14 @@ function contactControl($conn, $query)
         $stmt->execute();
         $stmt->close();
         $conn->close();
+        echo "<script defer>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Message sent succesfully. Thanks for your time!',
+                    showConfirmButton: true,
+                    timer: 1500
+                })
+           </script>";
+        exit();
     }
 }
