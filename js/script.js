@@ -3,6 +3,7 @@ const crossMenu = document.querySelector('#menuOpened')
 const barsMenu = document.querySelector('#menuClosed')
 const hiddenMenu = document.querySelector('.header__mobile-menu')
 const headerBar = document.querySelector('header')
+const form = document.querySelector('.details-container__form');
 
 let dropdown = false;
 
@@ -48,6 +49,35 @@ window.addEventListener('scroll', function () {
 
 })
 
+// form.addEventListener('submit', function(event) {
+//     event.preventDefault();
+//     const formData = new FormData(form);
 
-
+//     fetch('room_details.php', {
+//         method: 'POST',
+//         body: formData
+//     })
+//     .then(response => response.json())
+//     .then(data => {
+//         if (data.success) {
+//             Swal.fire({
+//                 icon: 'success',
+//                 title: 'Booking done successfully.',
+//                 showConfirmButton: false,
+//                 timer: 1500
+//             }).then(() => {
+//                 location.reload();
+//             });
+//         } else {
+//             Swal.fire({
+//                 icon: 'error',
+//                 title: 'Oops...',
+//                 text: data.message
+//             });
+//         }
+//     })
+//     .catch(error => {
+//         console.error('Error:', error);
+//     });
+// });
 
