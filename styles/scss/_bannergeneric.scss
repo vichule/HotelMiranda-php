@@ -1,9 +1,9 @@
-.bannerGeneric{
+.bannerGeneric {
     background-color: #333333;
     color: white;
     padding: 15em 1.5em 8em 1.5em;
 
-    &__title{
+    &__title {
         font-family: Archivo;
         font-size: 1.2em;
         font-weight: 700;
@@ -13,7 +13,8 @@
         max-width: 15em;
 
     }
-    &__subtitle{
+
+    &__subtitle {
         font-family: Old Standard TT;
         font-size: 5.6em;
         font-weight: 400;
@@ -23,7 +24,8 @@
         margin-bottom: 0.8em;
 
     }
-    &__nav{
+
+    &__nav {
         background-color: white;
         max-width: 15em;
         min-height: 5em;
@@ -35,7 +37,8 @@
         justify-content: space-around;
         padding: 1em 0.5em 1em 0.5em;
     }
-    &__nav a{
+
+    &__nav a {
         list-style-type: none;
         text-decoration: none;
         font-family: Archivo;
@@ -43,41 +46,44 @@
         font-weight: 700;
         letter-spacing: -0.04em;
     }
-    &__nav p{
+
+    &__nav p {
         color: black;
         font-size: 1.5em;
         font-weight: bold;
     }
 }
 
-#homeBtn{
+#homeBtn {
     color: black;
 }
 
-#currentBtn{
+#currentBtn {
     color: #BEAD8E;
 }
 
 
 @media (width > 1000px) {
-    .bannerGeneric{
+    .bannerGeneric {
         padding: 15em 1.5em 8em 28.5em;
         height: 40em;
-    
-        &__title{
+
+        &__title {
             max-width: 25em;
-    
+
         }
-        &__subtitle{
+
+        &__subtitle {
             font-size: 7.6em;
             max-width: 7em;
             margin-top: 0.3em;
-    
+
         }
-        &__nav{
+
+        &__nav {
             left: 65%;
             top: 3em;
         }
-        
+
     }
 }

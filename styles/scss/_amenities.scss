@@ -1,7 +1,7 @@
-.amenities{
+.amenities {
     margin: 5em 2em 10em 2em;
 
-    h4{
+    h4 {
         font-family: Old Standard TT;
         font-size: 3em;
         font-weight: 400;
@@ -10,33 +10,37 @@
         border-bottom: 1px solid #7777773b;
         margin-bottom: 1em;
     }
-    &-list{
+
+    &-list {
         display: flex;
         justify-content: space-between;
         max-width: 25em;
         margin-left: 1.5em;
-        
-        ul{
+
+        ul {
             list-style-type: none;
         }
-        li{
+
+        li {
             font-family: Roboto;
             font-size: 1.2em;
             font-weight: 500;
             color: #777777;
             margin-bottom: 1em;
         }
-        img{
+
+        img {
             max-width: 1.3em;
             margin-right: 0.5em;
         }
     }
-    &-profile{
+
+    &-profile {
         max-width: 35em;
         text-align: center;
         padding: 5em;
 
-        &__checkmark{
+        &__checkmark {
             background-color: #BDAC8D;
             width: 4em;
             height: 4em;
@@ -50,12 +54,13 @@
             top: 5em;
         }
 
-        h4{
+        h4 {
             border: none;
             text-align: center;
             margin-bottom: 0em;
         }
-        h2{
+
+        h2 {
             font-family: Archivo;
             font-size: 1.4em;
             font-weight: 700;
@@ -64,7 +69,8 @@
             color: #BDAC8D;
             margin-bottom: 1em;
         }
-        p{
+
+        p {
             font-family: Archivo;
             font-size: 1.6em;
             font-weight: 400;
@@ -72,15 +78,17 @@
             color: #777777;
         }
 
-        img{
+        img {
             width: 15em;
             border-radius: 10em;
             height: 15em;
         }
     }
-    &-cancellation{
+
+    &-cancellation {
         margin-top: 5em;
-        p{
+
+        p {
             font-family: Roboto;
             font-size: 1.4em;
             font-weight: 400;
@@ -92,32 +100,34 @@
 }
 
 @media (width > 1000px) {
-    .amenities{
+    .amenities {
         padding: 0em 30em 0em 30em;
         display: block !important;
 
-        &-profile{
+        &-profile {
             margin-top: 5em;
             padding: 5em 5em 10em 5em;
             box-shadow: 3px 3px 10px 3px #BEAD8E45;
 
-            &__checkmark{
+            &__checkmark {
                 left: 16em;
             }
         }
-        &-cancellation{
+
+        &-cancellation {
             width: 57em;
         }
-        &-list{
+
+        &-list {
             max-width: 35em;
         }
     }
 }
 
 @media (width > 600px) {
-    .amenities{
+    .amenities {
         display: grid;
         justify-items: center;
     }
-    
+
 }

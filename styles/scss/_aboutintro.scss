@@ -1,11 +1,13 @@
-.aboutintro{
+.aboutintro {
     display: grid;
     justify-items: center;
-    &__video{
+
+    &__video {
         margin: 5em 0em 3em 0em;
         min-height: 20em;
     }
-    &__par{
+
+    &__par {
         font-family: Old Standard TT;
         font-size: 3em;
         font-weight: 400;
@@ -13,14 +15,15 @@
         text-align: center;
         margin: 0em 1em 1em 1em;
     }
-    &__featuresContainer{
+
+    &__featuresContainer {
         display: flex;
         flex-wrap: wrap;
         max-width: 80em;
         justify-content: space-around;
         margin: 5em 0em 5em 0em;
 
-        &__item{
+        &__item {
             width: 15em;
             height: 15em;
             display: grid;
@@ -29,7 +32,8 @@
             justify-content: center;
             justify-items: center;
         }
-        &__item p{
+
+        &__item p {
             font-family: Archivo;
             font-size: 1.2em;
             font-weight: 700;
@@ -39,32 +43,35 @@
     }
 }
 
-.gold{
+.gold {
     background-color: #BEAD8E;
     color: white;
 }
 
-#bbq{
+#bbq {
     display: none;
 }
 
 @media (width > 1000px) {
 
-    .aboutintro{
+    .aboutintro {
 
-        &__video{
+        &__video {
             width: 100em;
             height: 50em;
             margin-top: 15em;
         }
-        &__par{
+
+        &__par {
             max-width: 14em;
             font-size: 5em;
         }
-        &__featuresContainer{
+
+        &__featuresContainer {
             width: 50%;
             max-width: 50%;
-            #bbq{
+
+            #bbq {
                 display: grid;
             }
 
