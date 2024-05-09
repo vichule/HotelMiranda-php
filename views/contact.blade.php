@@ -49,15 +49,17 @@
             <ul>
                 <div class="contactForm__form__inputContainer">
                     <li>
-                        <input type="text" name="first_name" class="field-style field-full" placeholder="Your first name" />
+                        <input type="text" name="first_name" class="field-style field-full"
+                            placeholder="Your first name" />
                     </li>
                     <li>
-                        <input type="text" name="last_name" class="field-style field-full" placeholder="Your last name" />
+                        <input type="text" name="last_name" class="field-style field-full"
+                            placeholder="Your last name" />
                     </li>
-                    
-                    
+
+
                 </div>
-                
+
                 <div class="contactForm__form__inputContainer">
                     <li>
                         <input type="email" name="email" class="field-style field-full"
@@ -69,7 +71,7 @@
                     </li>
                 </div>
                 <div class="contactForm__form__inputContainer">
-                    
+
                     <li>
                         <input type="text" name="subject" class="field-style field-full" placeholder="Enter subject" />
                     </li>

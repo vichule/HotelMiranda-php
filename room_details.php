@@ -1,10 +1,10 @@
 <?php
 require_once(__DIR__ . '/utils/setup.php');
-require_once( __DIR__ . '/utils/queries/rooms/getRoomQuery.php');
-require_once( __DIR__ . '/utils/queries/rooms/getRelatedRooms.php');
+require_once(__DIR__ . '/utils/queries/rooms/getRoomQuery.php');
+require_once(__DIR__ . '/utils/queries/rooms/getRelatedRooms.php');
 require_once(__DIR__ . '/utils/getAmenities.php');
-require_once( __DIR__ . '/utils/queries/bookings/addBookingQuery.php');
-require_once(__DIR__.'/utils/forms/formControl.php');
+require_once(__DIR__ . '/utils/queries/bookings/addBookingQuery.php');
+require_once(__DIR__ . '/utils/forms/formControl.php');
 
 
 // $roomId = $_POST['room_id'];
