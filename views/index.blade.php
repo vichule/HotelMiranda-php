@@ -186,8 +186,8 @@
                         </div>
                     </div>
                     <div class="menu__sliderMenu-slide-item">
-                        <div class="menu__sliderMenu-slide-item__img"><img class="" src="./assets/home/coffee.jpg"
-                                alt=""></div>
+                        <div class="menu__sliderMenu-slide-item__img"><img src="https://c.pxhere.com/photos/2b/37/coffe_drink_cup_young_morning_breakfast_lifestyle_happy-1039445.jpg!d" >
+                        </div>
                         <div class="menu__sliderMenu-slide-item__text">
                             <h4>Tea or Coffee</h4>
                             <p>
@@ -196,7 +196,7 @@
                         </div>
                     </div>
                     <div class="menu__sliderMenu-slide-item">
-                        <div class="menu__sliderMenu-slide-item__img"><img class="" src="./assets/home/chia.jpg"
+                        <div class="menu__sliderMenu-slide-item__img"><<img src="https://c.pxhere.com/photos/d7/79/porridge_muesli_breakfast_vegan_oatmeal_chia_cocoa_nibs_orange-1277718.jpg!d" 
                                 alt=""></div>
                         <div class="menu__sliderMenu-slide-item__text">
                             <h4>Chia Oatmeal</h4>
@@ -208,7 +208,7 @@
                 </div>
                 <div class="swiper-slide menu__sliderMenu-slide">
                     <div class="menu__sliderMenu-slide-item">
-                        <div class="menu__sliderMenu-slide-item__img"><img class="" src="./assets/home/parfait.jpg"
+                        <div class="menu__sliderMenu-slide-item__img"><<img src="https://c.pxhere.com/photos/1e/e0/breakfast_vegan_healthy_eat_tasty_of_course_well_being_happy-553245.jpg!d" 
                                 alt=""></div>
                         <div class="menu__sliderMenu-slide-item__text">
                             <h4>Fruit Parfait</h4>
@@ -228,7 +228,7 @@
                         </div>
                     </div>
                     <div class="menu__sliderMenu-slide-item">
-                        <div class="menu__sliderMenu-slide-item__img"><img class="" src="./assets/home/cheese.jpg"
+                        <div class="menu__sliderMenu-slide-item__img"><<img src="https://c.pxhere.com/photos/6e/eb/k_seplatte_cheese_party_buffet_cheese_plate_hearty_breakfast_food-751711.jpg!d" 
                                 alt=""></div>
                         <div class="menu__sliderMenu-slide-item__text">
                             <h4>Cheese Plate</h4>
@@ -250,8 +250,9 @@
                         </div>
                     </div>
                     <div class="menu__sliderMenu-slide-item">
-                        <div class="menu__sliderMenu-slide-item__img"><img class="" src="./assets/home/coffee.jpg"
-                                alt=""></div>
+                        <div class="menu__sliderMenu-slide-item__img"><img
+                                src="https://c.pxhere.com/photos/39/a8/coffee_cafe_mug_decorative_drink_beverage_latte_cappuccino-847370.jpg!d"
+                                alt="coffee cup"></div>
                         <div class="menu__sliderMenu-slide-item__text">
                             <h4>Tea or Coffee</h4>
                             <p>
@@ -260,7 +261,7 @@
                         </div>
                     </div>
                     <div class="menu__sliderMenu-slide-item">
-                        <div class="menu__sliderMenu-slide-item__img"><img class="" src="./assets/home/chia.jpg"
+                        <div class="menu__sliderMenu-slide-item__img"><<img src="https://c.pxhere.com/photos/d7/79/porridge_muesli_breakfast_vegan_oatmeal_chia_cocoa_nibs_orange-1277718.jpg!d" 
                                 alt=""></div>
                         <div class="menu__sliderMenu-slide-item__text">
                             <h4>Chia Oatmeal</h4>
@@ -289,7 +290,7 @@
 
                 <div class="menu__sliderPics__container__item swiper-slide ">
                     <img class="menu__sliderPics__container__item__img" id="imgCarousel"
-                        src="./assets/home/capuccino.jpg">
+                        src="https://c.pxhere.com/photos/d9/af/coffee_coffee_beans_drink_caffeine_beverage_brown_espresso_beans-635680.jpg!d">
                 </div>
             </div>
             <div class="swiper-pagination "></div>
