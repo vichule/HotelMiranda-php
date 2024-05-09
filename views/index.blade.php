@@ -4,21 +4,21 @@
     <section class="banner">
         <p class="banner__title">THE ULTIMATE LUXURY EXPERIENCE</p>
         <h1 class="banner__subtitle">The Perfect Base For You</h1>
-        <a href="about.php" ><button class="banner__indexBtn1">TAKE A TOUR</button></a>
-        
-        
-        <a href="contact.php" ><button class="banner__indexBtn2">LEARN MORE</button></a>
+        <a href="about.php"><button class="banner__indexBtn1">TAKE A TOUR</button></a>
+
+
+        <a href="contact.php"><button class="banner__indexBtn2">LEARN MORE</button></a>
     </section>
     <section class="dateCheck">
         <form id="datecheckform" class="dateCheck__container" action="rooms.php">
             <div>
                 <label for="arrival" class="dateCheck__container__label">Arrival Date</label>
-                <input type="date" id="arrival" name="arrival" value="2024-03-24" min="2024-03-01" max="2028-12-31"
+                <input type="date" id="arrival" name="arrival" min="2024-03-01" max="2028-12-31"
                     class="dateCheck__container__input1" />
             </div>
             <div>
                 <label for="departure" class="dateCheck__container__label">LeDeparture Date</label>
-                <input type="date" id="departure" name="departure" value="2024-03-30" min="2024-03-25" max="2028-12-31"
+                <input type="date" id="departure" name="departure" min="2024-03-25" max="2028-12-31"
                     class="dateCheck__container__input2" />
             </div>
             <button class="dateCheck__container__checkBtn">CHECK AVAILABILITY</button>
@@ -32,7 +32,7 @@
             <p class="homeAbout__firstContainer__par">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="rooms.php" ><button class="homeAbout__firstContainer__btn">BOOK NOW</button></a>
+            <a href="rooms.php"><button class="homeAbout__firstContainer__btn">BOOK NOW</button></a>
         </div>
 
         <div class="homeAbout__secondContainer">

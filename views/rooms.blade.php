@@ -17,7 +17,6 @@
                 @foreach ($rooms as $room)
                     <div class="swiper-slide popularList__slider__wrapper__slide">
                         <img src="{{ json_decode($room['photo_url'])[0] }}" alt="">
-                        {{-- <img src="./assets/home/frame_rooms.jpg" alt="" id="roomsComplement"> --}}
                         <div id="amenities_frame">
                             @foreach (json_decode($room['amenity_name']) as $amenity)
                                 <img src="{{ getAmenities($amenity) }}" id="roomsComplement">
@@ -31,8 +30,7 @@
                     </div>
                 @endforeach
 
-                {{-- <div class="roomsGrid__slider__backArrow">&#10094;</div>
-                <div class="roomsGrid__slider__forwardArrow">&#10095;</div> --}}
+
             </div>
 
             <div class="swiper-pagination"></div>

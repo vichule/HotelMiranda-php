@@ -28,16 +28,6 @@ function bookingControl($conn, $roomId, $query)
         $orderdate = date('Y-m-d');
         $status = "In progress";
 
-        //     if (!isRoomAvailable($conn, $roomId, $checkin, $checkout)) {
-        //         echo "Room not available in those dates.";
-        //         return;
-        //     }
-
-        //     $stmt = $conn->prepare($query);
-        //     $stmt->bind_param("sssssssii", $firstname, $lastname, $orderdate, $checkin, $checkout, $notes, $status, $discount, $roomId);
-        //     $stmt->execute();
-        //     echo "Booking done successfully.";
-        // }
 
         if (!isRoomAvailable($conn, $roomId, $checkin, $checkout)) {
             echo "<script defer>
@@ -64,8 +54,9 @@ function bookingControl($conn, $roomId, $query)
                     timer: 3500
                 })
            </script>";
-        
-        die("<script>location.href = 'index.php'</script>");
+        header( 'Location: /index.php');
+        exit();
+        // die("<script>location.href = 'index.php'</script>");
     }
 }
 
