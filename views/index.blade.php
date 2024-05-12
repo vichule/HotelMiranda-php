@@ -17,7 +17,7 @@
                     class="dateCheck__container__input1" />
             </div>
             <div>
-                <label for="departure" class="dateCheck__container__label">LeDeparture Date</label>
+                <label for="departure" class="dateCheck__container__label">Departure Date</label>
                 <input type="date" id="departure" name="departure" min="2024-03-25" max="2028-12-31"
                     class="dateCheck__container__input2" />
             </div>
@@ -186,7 +186,8 @@
                         </div>
                     </div>
                     <div class="menu__sliderMenu-slide-item">
-                        <div class="menu__sliderMenu-slide-item__img"><img src="https://c.pxhere.com/photos/2b/37/coffe_drink_cup_young_morning_breakfast_lifestyle_happy-1039445.jpg!d" >
+                        <div class="menu__sliderMenu-slide-item__img"><img
+                                src="https://c.pxhere.com/photos/2b/37/coffe_drink_cup_young_morning_breakfast_lifestyle_happy-1039445.jpg!d">
                         </div>
                         <div class="menu__sliderMenu-slide-item__text">
                             <h4>Tea or Coffee</h4>
@@ -196,7 +197,8 @@
                         </div>
                     </div>
                     <div class="menu__sliderMenu-slide-item">
-                        <div class="menu__sliderMenu-slide-item__img"><<img src="https://c.pxhere.com/photos/d7/79/porridge_muesli_breakfast_vegan_oatmeal_chia_cocoa_nibs_orange-1277718.jpg!d" 
+                        <div class="menu__sliderMenu-slide-item__img"><img
+                                src="https://c.pxhere.com/photos/d7/79/porridge_muesli_breakfast_vegan_oatmeal_chia_cocoa_nibs_orange-1277718.jpg!d"
                                 alt=""></div>
                         <div class="menu__sliderMenu-slide-item__text">
                             <h4>Chia Oatmeal</h4>
@@ -208,7 +210,8 @@
                 </div>
                 <div class="swiper-slide menu__sliderMenu-slide">
                     <div class="menu__sliderMenu-slide-item">
-                        <div class="menu__sliderMenu-slide-item__img"><<img src="https://c.pxhere.com/photos/1e/e0/breakfast_vegan_healthy_eat_tasty_of_course_well_being_happy-553245.jpg!d" 
+                        <div class="menu__sliderMenu-slide-item__img"><img
+                                src="https://c.pxhere.com/photos/1e/e0/breakfast_vegan_healthy_eat_tasty_of_course_well_being_happy-553245.jpg!d"
                                 alt=""></div>
                         <div class="menu__sliderMenu-slide-item__text">
                             <h4>Fruit Parfait</h4>
@@ -228,7 +231,8 @@
                         </div>
                     </div>
                     <div class="menu__sliderMenu-slide-item">
-                        <div class="menu__sliderMenu-slide-item__img"><<img src="https://c.pxhere.com/photos/6e/eb/k_seplatte_cheese_party_buffet_cheese_plate_hearty_breakfast_food-751711.jpg!d" 
+                        <div class="menu__sliderMenu-slide-item__img"><img
+                                src="https://c.pxhere.com/photos/6e/eb/k_seplatte_cheese_party_buffet_cheese_plate_hearty_breakfast_food-751711.jpg!d"
                                 alt=""></div>
                         <div class="menu__sliderMenu-slide-item__text">
                             <h4>Cheese Plate</h4>
@@ -261,7 +265,8 @@
                         </div>
                     </div>
                     <div class="menu__sliderMenu-slide-item">
-                        <div class="menu__sliderMenu-slide-item__img"><<img src="https://c.pxhere.com/photos/d7/79/porridge_muesli_breakfast_vegan_oatmeal_chia_cocoa_nibs_orange-1277718.jpg!d" 
+                        <div class="menu__sliderMenu-slide-item__img"><img
+                                src="https://c.pxhere.com/photos/d7/79/porridge_muesli_breakfast_vegan_oatmeal_chia_cocoa_nibs_orange-1277718.jpg!d"
                                 alt=""></div>
                         <div class="menu__sliderMenu-slide-item__text">
                             <h4>Chia Oatmeal</h4>
