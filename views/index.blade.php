@@ -175,7 +175,7 @@
         <div class="swiper menu__sliderMenu">
             <div class="swiper-wrapper">
                 <div class="swiper-slide menu__sliderMenu-slide">
-                    <div class="menu__sliderMenu-slide-item">
+                    <div class="menu__sliderMenu-slide-item" style="background-image: url(/assets/home/arrowHover.png);">
                         <div class="menu__sliderMenu-slide-item__img"><img class=""
                                 src="./assets/home/bacon-egg.jpg" alt=""></div>
                         <div class="menu__sliderMenu-slide-item__text">
@@ -185,7 +185,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="menu__sliderMenu-slide-item">
+                    <div class="menu__sliderMenu-slide-item" style="background-image: url(/assets/home/arrowHover.png);">
                         <div class="menu__sliderMenu-slide-item__img"><img
                                 src="https://c.pxhere.com/photos/2b/37/coffe_drink_cup_young_morning_breakfast_lifestyle_happy-1039445.jpg!d">
                         </div>
@@ -196,7 +196,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="menu__sliderMenu-slide-item">
+                    <div class="menu__sliderMenu-slide-item" style="background-image: url(/assets/home/arrowHover.png);">
                         <div class="menu__sliderMenu-slide-item__img"><img
                                 src="https://c.pxhere.com/photos/d7/79/porridge_muesli_breakfast_vegan_oatmeal_chia_cocoa_nibs_orange-1277718.jpg!d"
                                 alt=""></div>
@@ -209,7 +209,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide menu__sliderMenu-slide">
-                    <div class="menu__sliderMenu-slide-item">
+                    <div class="menu__sliderMenu-slide-item" style="background-image: url(/assets/home/arrowHover.png);">
                         <div class="menu__sliderMenu-slide-item__img"><img
                                 src="https://c.pxhere.com/photos/1e/e0/breakfast_vegan_healthy_eat_tasty_of_course_well_being_happy-553245.jpg!d"
                                 alt=""></div>
@@ -220,7 +220,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="menu__sliderMenu-slide-item">
+                    <div class="menu__sliderMenu-slide-item" style="background-image: url(/assets/home/arrowHover.png);">
                         <div class="menu__sliderMenu-slide-item__img"><img class=""
                                 src="./assets/home/marmalade.jpg" alt=""></div>
                         <div class="menu__sliderMenu-slide-item__text">
@@ -230,7 +230,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="menu__sliderMenu-slide-item">
+                    <div class="menu__sliderMenu-slide-item" style="background-image: url(/assets/home/arrowHover.png);">
                         <div class="menu__sliderMenu-slide-item__img"><img
                                 src="https://c.pxhere.com/photos/6e/eb/k_seplatte_cheese_party_buffet_cheese_plate_hearty_breakfast_food-751711.jpg!d"
                                 alt=""></div>
@@ -243,7 +243,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide menu__sliderMenu-slide">
-                    <div class="menu__sliderMenu-slide-item">
+                    <div class="menu__sliderMenu-slide-item" style="background-image: url(/assets/home/arrowHover.png);">
                         <div class="menu__sliderMenu-slide-item__img"><img class=""
                                 src="./assets/home/bacon-egg.jpg" alt=""></div>
                         <div class="menu__sliderMenu-slide-item__text">
@@ -253,7 +253,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="menu__sliderMenu-slide-item">
+                    <div class="menu__sliderMenu-slide-item" style="background-image: url(/assets/home/arrowHover.png);">
                         <div class="menu__sliderMenu-slide-item__img"><img
                                 src="https://c.pxhere.com/photos/39/a8/coffee_cafe_mug_decorative_drink_beverage_latte_cappuccino-847370.jpg!d"
                                 alt="coffee cup"></div>
@@ -264,7 +264,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="menu__sliderMenu-slide-item">
+                    <div class="menu__sliderMenu-slide-item" style="background-image: url(/assets/home/arrowHover.png);">
                         <div class="menu__sliderMenu-slide-item__img"><img
                                 src="https://c.pxhere.com/photos/d7/79/porridge_muesli_breakfast_vegan_oatmeal_chia_cocoa_nibs_orange-1277718.jpg!d"
                                 alt=""></div>

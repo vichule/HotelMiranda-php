@@ -535,6 +535,7 @@ header {
   height: 3em;
   z-index: 20;
   right: 15em;
+  padding: 0.8em 0em 0.5em 0em;
 }
 .homerooms-forwardArrow {
   bottom: 12em;
@@ -542,6 +543,7 @@ header {
   height: 3em;
   z-index: 20;
   left: 14em;
+  padding: 0.8em 0em 0.5em 0em;
 }
 
 #roomsImg {
@@ -768,6 +770,7 @@ header {
   display: flex;
   margin: 1em 0em 2em 2em;
   background: 0;
+  background-size: 0;
 }
 .menu__sliderMenu-slide-item img {
   width: 10em;
@@ -798,10 +801,10 @@ header {
 .menu__sliderMenu-slide-item:hover {
   background-color: black;
   color: white;
-  background-image: url(/assets/home/arrowHover.png);
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: 95%;
+  background-size: auto;
 }
 .menu__sliderMenu__backArrow {
   bottom: 0em;
@@ -827,7 +830,6 @@ header {
   cursor: pointer;
   position: relative;
   background-color: #ebebeb;
-  padding: 1em;
   display: inline-block;
 }
 
@@ -835,7 +837,6 @@ header {
   cursor: pointer;
   position: relative;
   background-color: #BDAC8D;
-  padding: 1em;
   color: white;
   display: inline-block;
 }
